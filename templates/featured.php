@@ -3,12 +3,11 @@
   <img src="http://donfranciscomaquinarias.com/files/front_don_francisco.jpg" width="960" height="285" style="margin-left:-17%;" />
 </div>
 -->
-<div class="container">
+<div class="container imgFront">
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    <div class="imgFront">
-    <img src="http://donfranciscomaquinarias.com/files/front_don_francisco.jpg" class="img-responsive" alt="front image">
-        </div>
+   <img src="http://donfranciscomaquinarias.com/files/front_don_francisco.jpg" class="img-responsive" alt="front image">
+
   </div>
 </div>
 

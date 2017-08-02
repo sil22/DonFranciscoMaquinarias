@@ -25,6 +25,11 @@ h4 { font-size: 16px; font-weight: 600; }
 h5 { font-size: 14px; font-weight: 400; }
 h6 { font-size: 13px; }
 
+#header {
+	border-top: 5px solid #000000;
+	border-bottom: 1px solid #e4e4e4;
+	background-color: #FFCD00;
+ }
 
 .page-title {
 	cursor: default;
@@ -307,19 +312,16 @@ textarea {
 	line-height: 26px;
 }
 
+#logo {
+	 float: left;
+	 margin: 20px 0px;
+	 background: transparent url(../files/logo0000.png) no-repeat;
+}
 
-
-
-
- #header {
-	height: 130px;
-	margin-top: 0px;
- }
-
-#logo { float: left; margin: 20px 0px; background: transparent url(../files/logo0000.png) no-repeat; }
-#logo a { display: block; width: 250px; height: 90px; }
-#logo h1 { margin: 0px; text-indent: -9999px; }
-#logo img { border: 0px; }
+#logo a {
+	 width: 250px;
+	 height: 90px;
+}
 
 .navigation { position: relative; float: right; margin: 50px 0px; font-size: 13px; font-weight: 600; text-transform: uppercase; }
 .navigation ul a { display: block; line-height: 30px; }

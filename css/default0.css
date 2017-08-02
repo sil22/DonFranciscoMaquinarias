@@ -13,8 +13,6 @@ h1, h2, h3, h4, h5, h6 {
 .imgFront{
 	background-color: #ffe373;
 	width:auto;
-	margin-top:-25px;
-	padding:-5px;
 }
 
 .footer{
@@ -26,7 +24,6 @@ h1, h2, h3, h4, h5, h6 {
 	 height: 200px;
 	 margin: auto;
 }
-
 
 .page-title {
 	color: #828282;
@@ -126,14 +123,6 @@ textarea {
 	color: #ffffff;
 	background-color: #FFCD00;
 }
-
-
-#header {
-	border-top: 5px solid #000000;
-	border-bottom: 1px solid #e4e4e4;
-	background-color: #FFCD00;
- }
-
 
 .navigation ul a { color: #000000; }
 .navigation ul a:hover { color: #666666; }

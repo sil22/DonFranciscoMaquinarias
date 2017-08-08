@@ -347,13 +347,6 @@ textarea {
 	height: 240px;
 }
 
-#featuredCars_tj_container .tj_wrapper {
-}
-
-#featuredCars_tj_container .tj_wrapper ul li {
-	height: 275px;
-}
-
 #featuredCars h5  {
 	padding: 0px 8px;
 	font-weight: 600;
@@ -452,14 +445,15 @@ textarea {
 
 
 a.image-zoom {
-	filter: alpha(opacity=90);
+	filter:
+	(opacity=90);
 	opacity: 0.90;
 }
 
 a.image-zoom:hover {
 	filter: alpha(opacity=70);
 	opacity: 0.70;
-	-webkit-transition: opacity 0.3s ease-in-out;
+	-webkit-transition: opac©ity 0.3s ease-in-out;
 	   -moz-transition: opacity 0.3s ease-in-out;
 		-ms-transition: opacity 0.3s ease-in-out;
 		 -o-transition: opacity 0.3s ease-in-out;

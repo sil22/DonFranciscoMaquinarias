@@ -5,8 +5,8 @@
 -->
 <div class="container-fluid imgFront">
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <img src="http://donfranciscomaquinarias.com/files/front_don_francisco.jpg" class="img-responsive" alt="front image">
+    <div class="col-xs-12 col-md-8 col-lg-12 center-block">
+      <img src="http://donfranciscomaquinarias.com/files/front_don_francisco.jpg" class="img-responsive center-block front" alt="front image">
 
     </div>
   </div>
@@ -61,101 +61,81 @@ jQuery('a#invitacion').click();
 
 
 <!-- #featured-cars -->
-<div class="container">
+<div class="container hidden-xs" id="featuredCars">
   <div class="row">
     <div class="col-md-12">
-      <h4 class="section-title section-line">Maquinarias</h4>
       <div class="tj_nav">
-        <h4>
         <span id="tj_prev" class="glyphicon glyphicon-chevron-left tj_prev" aria-hidden="true"></span>
-        <span id="tj_prev" class="glyphicon glyphicon-chevron-right tj_next" aria-hidden="true"></span>
-        </h4>
+        <span id="tj_next" class="glyphicon glyphicon-chevron-right tj_next" aria-hidden="true"></span>
       </div>
-    </div>
-    <div class="col-md-8">
-
-    <div id="featuredCars_tj_container">
-      <div class="tj_wrapper">
-        <ul class="tj_gallery">
-
-
-          <!--
-          <div id="featuredCars" class="container">
-          <div class="container_12 clearfix">
-          <div class="grid_12 clearfix"><h4 class="section-title section-line">Maquinarias</h4></div>
-
-          <div id="featuredCars_tj_container" class="grid_12 tj_container">
-
-          <div class="tj_nav">
-          <span id="tj_prev" class="tj_prev">Anterior</span>
-          <span id="tj_next" class="tj_next">Siguiente</span>
-        </div>
-
+      <h4 class="section-title section-line">Maquinarias</h4>
+      <div id="featuredCars_tj_container" >
         <div class="tj_wrapper">
-        <ul class="tj_gallery">
-      -->
-      <?php
-
-      require_once('admin/clase_DB.php');
-
-      $db = new DB();
-
-      $db->conectar();
-
-      $resultados =  $db->consulta('SELECT
-        *
-        FROM
-        vehiculos,imagenes
-        WHERE
-        vehiculos.id  = imagenes.id_vehiculo AND
-        imagenes.portada = "si" AND
-        vehiculos.destacado = "si"
-        ORDER BY
-        vehiculos.id DESC
-        LIMIT 9 ');
+          <ul class="tj_gallery">
 
 
+            <?php
 
-        while($row=mysql_fetch_array($resultados)){
+            require_once('admin/clase_DB.php');
 
-          ?>
-          <li class="col-md-4">
-            <a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" class="image-zoom" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
-              <img src="<?=$row['min_url']?>" class="img-responsive imgFeatured" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
-              <span class="zoom-icon"></span> <!-- icono + arriba de la foto -->
-            </a>
-            <h5 class="marginT5"><a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" ><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h5>
-          </li>
-          <?php }
+            $db = new DB();
 
-          $db->desconectar();
+            $db->conectar();
 
-          ?>
+            $resultados =  $db->consulta('SELECT
+              *
+              FROM
+              vehiculos,imagenes
+              WHERE
+              vehiculos.id  = imagenes.id_vehiculo AND
+              imagenes.portada = "si" AND
+              vehiculos.destacado = "si"
+              ORDER BY
+              vehiculos.id DESC
+              LIMIT 9 ');
 
-        </ul>
 
+
+              while($row=mysql_fetch_array($resultados)){
+
+                ?>
+                <li class="col-md-4 featured">
+                  <a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" class="image-zoom" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+                    <img src="<?=$row['min_url']?>" class="img-responsive imgFeatured attachment-featured" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+                    <span class="zoom-icon"></span> <!-- icono + arriba de la foto -->
+                  </a>
+                  <h5><a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"> <h4 class="title"><?=ucwords($row['model'])?></h4> <?=ucwords($row['note'])?> </a></h5>
+                </li>
+
+                <?php }
+
+                $db->desconectar();
+
+                ?>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</div> 
+    <script type="text/javascript">
 
-    </div>
+    var $j = jQuery.noConflict();
 
+    $j(function() {
+      $j('#featuredCars_tj_container').gridnav({
+        rows: 1,
+        type	: {
+          mode		: 'seqfade', 	// use def | fade | seqfade | updown | sequpdown | showhide | disperse | rows
+          speed		: 800,			// for fade, seqfade, updown, sequpdown, showhide, disperse, rows
+          easing		: '',			// for fade, seqfade, updown, sequpdown, showhide, disperse, rows
+          factor		: 100,			// for seqfade, sequpdown, rows
+          reverse		: ''			// for sequpdown
+        }
+      });
+    });
 
-<script type="text/javascript">
-var $j = jQuery.noConflict();
+    $('.carousel').carousel();
 
-$j(function() {
-  $j('#featuredCars_tj_container').gridnav({
-    rows: 1,
-    type	: {
-      mode		: 'seqfade', 	// use def | fade | seqfade | updown | sequpdown | showhide | disperse | rows
-      speed		: 800,			// for fade, seqfade, updown, sequpdown, showhide, disperse, rows
-      easing		: '',			// for fade, seqfade, updown, sequpdown, showhide, disperse, rows
-      factor		: 100,			// for seqfade, sequpdown, rows
-      reverse		: ''			// for sequpdown
-    }
-  });
-});
-</script>
-<!-- end - #featured-cars -->
+    </script>
+    <!-- end - #featured-cars -->

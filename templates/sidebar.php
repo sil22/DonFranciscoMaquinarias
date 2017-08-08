@@ -1,20 +1,20 @@
   <!-- #search -->
 		<div class="grid_4">
-        
-        
-        
+
+
+
 			<h4 class="section-title section-line">Busqueda</h4>
-			
+
 			<div id="homeSearch">
 				<form id="homeSearchForm" action="http://donfranciscomaquinarias.com/search.php" method="get">
-					
-											
-					
+
+
+
 										<div class="form-input clearfix">
 						<label for="marca">Marca</label>
 						<select name="marca" id="marca">
       <option selected value="">Seleccione</option>
-      <optgroup label="COSECHADORAS">      
+      <optgroup label="COSECHADORAS">
             <option value="Agco Allis">Agco Allis</option>
             <option value="Agrinar">Agrinar</option>
             <option value="Araus">Araus</option>
@@ -82,7 +82,7 @@
             <option value="Pulqui">Pulqui</option>
             <option value="Releyco">Releyco</option>
             <option value="/Syra">Syra</option>
-            <option value="Tecma">Tecma</option>            
+            <option value="Tecma">Tecma</option>
             <option value="Tedeschi">Tedeschi</option>
             <option value="Yomel">Yomel</option>
             <option value="Otras">Otras</option>
@@ -138,7 +138,7 @@
             <option value="Yomel">Yomel</option>
             <option value="Zanello">Zanello</option>
             <option value="Otras">Otras</option>
-      </optgroup>          
+      </optgroup>
       <optgroup label="TOLVAS">
       		<option value="Agroar">Agroar</option>
             <option value="Agromac">Agromac</option>
@@ -182,7 +182,7 @@
             <option value="Pony">Pony</option>
             <option value="Richiger">Richiger</option>
 			<option value="Vica">Vica</option>
-			<option value="Zanello">Zanello</option>          
+			<option value="Zanello">Zanello</option>
       </optgroup>
       <optgroup label="TRACTORES">
 			<option value="Abati">Abati</option>
@@ -226,78 +226,78 @@
       </optgroup>
     </select>
 					</div>
-					
+
 					<div class="form-input clearfix">
-						<label for="make_modelsub">Modelo</label>							
+						<label for="make_modelsub">Modelo</label>
 						<input name="modelo" id="modelo" type="text" />
 					</div>
-										
+
 
 					<div class="form-input clearfix">
 						<input type="hidden" name="auto_search" id="auto_search" value="true">
 						<input type="submit" id="homeSearchButton" name="homeSearchButton" value="Buscar">
 						<a href="http://donfranciscomaquinarias.com/search.php" class="advancedSearch">Busqueda Avenzada</a>
 					</div>
-					
+
 				</form>
 			</div>
 		</div><!-- end - #search -->
-        
-        
-        
-        
+
+
+
+
 <script type="text/javascript">
 	var $j = jQuery.noConflict();
-	
+
 	$j(document).ready(function(){
-		
-			
+
+
 		function fill_dd_model() {
 			$j("#homeSearch #make_modelsub").empty();
-			
+
 			var $make_id = $j("#homeSearch #make_model").val();
 
-			
+
 			$j.ajax({
 				type    : 'POST',
 				url     : 'http://wp.inoart.com/demo/autotrader/wp-admin/admin-ajax.php',
 				data    : { action : 'dox_get_model', make_id: $make_id, sel_text: true },
 				success : function(response) {
 					$j("#homeSearch #make_modelsub").removeAttr("disabled");
-					$j("#homeSearch #make_modelsub").append(response);					
-				}						
-			});				
-		
+					$j("#homeSearch #make_modelsub").append(response);
+				}
+			});
+
 		}
-		
+
 		/* if make changed */
 		$j("#homeSearch #make_model").change(function () {
-			fill_dd_model();			
-		});	
-			
-		
+			fill_dd_model();
+		});
+
+
 				function fill_dd_cities() {
 			$j("#homeSearch #locationsub").empty();
-			
+
 			var $location_id = $j("#homeSearch #location").val();
-			
+
 			$j.ajax({
 				type    : 'POST',
 				url     : 'http://wp.inoart.com/demo/autotrader/wp-admin/admin-ajax.php',
 				data    : { action : 'dox_get_city', location_id: $location_id, sel_text: true },
 				success : function(response) {
 					$j("#homeSearch #locationsub").removeAttr("disabled");
-					$j("#homeSearch #locationsub").append(response);					
-				}						
-			});				
-		
-		}		
-		
+					$j("#homeSearch #locationsub").append(response);
+				}
+			});
+
+		}
+
 		/* if location changed */
 		$j("#homeSearch #location").change(function () {
-			fill_dd_cities();			
-		});	
-					
-			
-	})	
+			fill_dd_cities();
+		});
+
+
+	})
 </script>

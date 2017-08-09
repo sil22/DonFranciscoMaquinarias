@@ -1,7 +1,7 @@
 <!-- #browser -->
 <div class="container">
 	<div class="row">
-		<div class="col-md-8 col-xs-10">
+		<div class="col-xs-12 col-sm-10 col-md-8 col-lg-12">
 			<h4 class="section-title section-line">Maquinarias</h4>
 				<div class="row">
 					<div class="col-md-6 browser-cat">

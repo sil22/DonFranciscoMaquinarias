@@ -69,7 +69,7 @@
 	</header>
 
 	<section>
-		<?php include('templates/featured.php'); ?>
+		<?php include('templates/featured2.php'); ?>
 		<?php include('templates/container.php'); ?>
 		<?php include('templates/latest.php'); ?>
 		<?php include('templates/dealers.php'); ?>

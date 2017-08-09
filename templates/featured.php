@@ -61,18 +61,17 @@ jQuery('a#invitacion').click();
 
 
 <!-- #featured-cars -->
-<div class="container hidden-xs" id="featuredCars">
+<div class="container" id="featuredCars">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12 col-md-8 col-lg-12">
       <div class="tj_nav">
         <span id="tj_prev" class="glyphicon glyphicon-chevron-left tj_prev" aria-hidden="true"></span>
         <span id="tj_next" class="glyphicon glyphicon-chevron-right tj_next" aria-hidden="true"></span>
       </div>
       <h4 class="section-title section-line">Maquinarias</h4>
-      <div id="featuredCars_tj_container" >
+      <div id="featuredCars_tj_container">
         <div class="tj_wrapper">
           <ul class="tj_gallery">
-
 
             <?php
 
@@ -99,43 +98,50 @@ jQuery('a#invitacion').click();
               while($row=mysql_fetch_array($resultados)){
 
                 ?>
-                <li class="col-md-4 featured">
-                  <a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" class="image-zoom" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
-                    <img src="<?=$row['min_url']?>" class="img-responsive imgFeatured attachment-featured" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
-                    <span class="zoom-icon"></span> <!-- icono + arriba de la foto -->
-                  </a>
-                  <h5><a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"> <h4 class="title"><?=ucwords($row['model'])?></h4> <?=ucwords($row['note'])?> </a></h5>
+                <li>
+                  <div class="row featured">
+                    <div class="col-xs-2 col-md-7 imgBox">
+                      <a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" class="image-zoom" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+                        <img src="<?=$row['min_url']?>" class="img-responsive imgFeatured attachment-featured" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+                        <span class="zoom-icon"></span> <!-- icono + arriba de la foto -->
+                      </a>
+                    </div>
+                    <div class=" col-xs-2 col-md-5 textFeatured">
+                      <h5>
+                        <a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"> <h4 class="title"><?=ucwords($row['model'])?></h4> <h4 class="descrip">Descripción:</h4><?=ucwords($row['note'])?> </a>
+                      </h5>
+                    </div>
+                  </div>
                 </li>
 
-                <?php }
+                  <?php }
 
-                $db->desconectar();
+                  $db->desconectar();
 
-                ?>
-          </ul>
+                  ?>
+
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div> 
-    <script type="text/javascript">
 
-    var $j = jQuery.noConflict();
+      <script type="text/javascript">
 
-    $j(function() {
-      $j('#featuredCars_tj_container').gridnav({
-        rows: 1,
-        type	: {
-          mode		: 'seqfade', 	// use def | fade | seqfade | updown | sequpdown | showhide | disperse | rows
-          speed		: 800,			// for fade, seqfade, updown, sequpdown, showhide, disperse, rows
-          easing		: '',			// for fade, seqfade, updown, sequpdown, showhide, disperse, rows
-          factor		: 100,			// for seqfade, sequpdown, rows
-          reverse		: ''			// for sequpdown
-        }
+      var $j = jQuery.noConflict();
+
+      $j(function() {
+        $j('#featuredCars_tj_container').gridnav({
+          rows: 1,
+          type	: {
+            mode		: 'seqfade', 	// use def | fade | seqfade | updown | sequpdown | showhide | disperse | rows
+            speed		: 800,			// for fade, seqfade, updown, sequpdown, showhide, disperse, rows
+            easing		: '',			// for fade, seqfade, updown, sequpdown, showhide, disperse, rows
+            factor		: 100,			// for seqfade, sequpdown, rows
+            reverse		: ''			// for sequpdown
+          }
+        });
       });
-    });
-
-    $('.carousel').carousel();
-
-    </script>
-    <!-- end - #featured-cars -->
+      </script>
+      <!-- end - #featured-cars -->

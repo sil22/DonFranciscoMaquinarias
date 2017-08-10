@@ -34,7 +34,7 @@
         imagenes.portada = "si" AND
         vehiculos.destacado = "si"
         ORDER BY
-        RAND() DESC
+        vehiculos.id  DESC
         LIMIT 3 ');
 
 
@@ -52,23 +52,25 @@
                             <div class="row">
 
                             <div class="col-md-6">
-                              <img src="" class="enlargeImageModalSource center-block">
+                              <img src="" class="enlargeImageModalSource  imgFeatured center-block">
                             </div>
                             <div class="col-md-4">
                               <h5>
                                 <a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"> <h4 class="title"><?=ucwords($row['model'])?></h4> <h4 class="descrip">Descripción:</h4><?=ucwords($row['note'])?> </a>
                               </h5>
+
                             </div>
                           </div>
-                        </div>
+
                       </div>
+                    </div>
                     </div>
                   </div>
 
           <li>
           <div class="row featured">
             <div class="col-xs-6 col-md-6">
-            <img style="" src="<?=$row['min_url']?>" class="img-responsive imgFeatured attachment-featured enlargeImageModalSource" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+            <img src="<?=$row['min_url']?>" class="img-responsive imgFeatured img-thumbnail" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
             <span class="zoom-icon"></span> <!-- icono + arriba de la foto -->
           </div>
           <div class=" col-xs-6 col-md-5 textFeatured">
@@ -78,6 +80,7 @@
           </div>
         </div>
       </li>
+
 
           <?php }
 
@@ -94,7 +97,7 @@
 
 <script type="text/javascript">
 $(function() {
-  $('.enlargeImageModalSource').on('click', function() {
+  $('.imgFeatured').on('click', function() {
     $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
     $('#enlargeImageModal').modal('show');
   });

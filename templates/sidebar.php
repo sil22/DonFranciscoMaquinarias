@@ -1,11 +1,8 @@
   <!-- #search -->
-		<div class="grid_4">
-
-
 
 			<h4 class="section-title section-line">Busqueda</h4>
 
-			<div id="homeSearch">
+			<div id="homeSearch" class="center-block">
 				<form id="homeSearchForm" action="http://donfranciscomaquinarias.com/search.php" method="get">
 
 
@@ -227,21 +224,21 @@
     </select>
 					</div>
 
-					<div class="form-input clearfix">
+					<div class="form-input">
 						<label for="make_modelsub">Modelo</label>
 						<input name="modelo" id="modelo" type="text" />
 					</div>
 
 
-					<div class="form-input clearfix">
+					<div class="form-input">
 						<input type="hidden" name="auto_search" id="auto_search" value="true">
-						<input type="submit" id="homeSearchButton" name="homeSearchButton" value="Buscar">
-						<a href="http://donfranciscomaquinarias.com/search.php" class="advancedSearch">Busqueda Avenzada</a>
+						<button class="btn btn-default" id="homeSearchButton" name="homeSearchButton" value="Buscar" type="submit">Buscar</button>
+						<a href="http://donfranciscomaquinarias.com/search.php" class="advancedSearch">Busqueda Avanzada</a>
 					</div>
 
 				</form>
 			</div>
-		</div><!-- end - #search -->
+	<!-- end - #search -->
 
 
 

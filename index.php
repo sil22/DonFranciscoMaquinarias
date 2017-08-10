@@ -75,9 +75,6 @@
 		<?php include('templates/dealers.php'); ?>
 	</section>
 
-	<aside>
-		<?php include('templates/sidebar.php'); ?>
-	</aside>
 
 	<footer class="footer">
 		<?php include('templates/footer.php'); ?>

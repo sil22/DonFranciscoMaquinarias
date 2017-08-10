@@ -1,10 +1,10 @@
 <!-- #browser -->
 <div class="container">
 	<div class="row">
-		<div class="col-xs-12 col-sm-10 col-md-8 col-lg-12">
+		<div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
 			<h4 class="section-title section-line">Maquinarias</h4>
 				<div class="row">
-					<div class="col-md-6 browser-cat">
+					<div class="col-md-6 browser-cat ">
 						<h5>Rubro</h5>
 						<ul>
 							<li class="browser-li"><a href="search.php?rubro=cosechadora">Cosechadoras</a></li>
@@ -18,27 +18,33 @@
 					</div>
 					<div class="col-md-6 browser-cat">
 						<h5>Marcas</h5>
-						<ul class="by-year clearfix">
+						<ul class="listadoMaquinarias">
+							<div class="col-md-6	">
 							<li class="browser-li"><a href="search.php?marca=Lecar">Lecar</a></li>
 							<li class="browser-li"><a href="search.php?marca=Bertini">Bertini</a></li>
 							<li class="browser-li"><a href="search.php?marca=Pozzi">Pozzi</a></li>
 							<li class="browser-li"><a href="search.php?marca=Erca">Erca</a></li>
 							<li class="browser-li"><a href="search.php?marca=Pauny">Pauny</a></li>
 							<li class="browser-li"><a href="search.php?marca=Baima">Baima</a></li>
+						</div>
+						<div class="col-md-6">
 							<li class="browser-li"><a href="search.php?marca=Praba">Praba</a></li>
 							<li class="browser-li"><a href="search.php?marca=Cestari">Cestari</a></li>
 							<li class="browser-li"><a href="search.php?marca=Don Roque">Don Roque</a></li>
 							<li class="browser-li"><a href="search.php?marca=De Grande">De Grande</a></li>
 							<li class="browser-li"><a href="search.php">Otras</a></li>
+						</div>
+
 						</ul>
 
 					</div>
-				</div>
-		</div>
-		<div class="col-md-4 col-xs-10">
-			<?php include('templates/sidebar.php'); ?>
+				</div>		</div>
 
+
+		<div class="col-md-4 col-xs-10 col-sm-6">
+			<?php include('templates/sidebar.php'); ?>
 		</div>
+
 	</div>
 </div>
 

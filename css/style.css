@@ -53,16 +53,31 @@ textarea {
 	border-radius: 5px;
 }
 
+#carDealers{
+	margin: 10px 0px 40px 0px;
+}
+
 .footer{
-	width: auto;
+	border-top:4px solid #FFCD00;
+	background-color: rgba(141,141,141,0.2);
+	margin-top: 20px;
+	padding-top: 30px;
+}
+
+#footer{
+	padding-bottom: 30px;
+
+}
+
+.contact-info{
+	color: #dddddd;
+	background-color: #333;
 }
 
 .imgFeatured{
 	width: 1000px;
 	height: 200px;
-	border-radius: 10px;
 	margin: 10px 0px 10px 0px;
-	border: 2px solid rgba(15, 16, 17, 0.71);
 
 }
 
@@ -162,12 +177,12 @@ li {
 }
 
 .featured {
-	border-radius: 20px;
 	background-color: #E0E0E0;
 	width: 350px !important;
 	margin: 0px 5px 0px 5px;
 	border: 1px solid #828282;
-	left: auto;
+	/*border-radius: 20px;
+	left: auto;*/
 }
 
 .tj_nav  {
@@ -214,4 +229,81 @@ a.image-zoom span.zoom-icon {
 	display: none;
 	width: 50px;
 	height: 50px;
+}
+
+#homeSearch{
+	background-color: #f6f6f6;
+	border: 1px solid #e8e8e8;
+	padding: 30px 40px;
+}
+
+#homeSearch .form-input{
+	margin-bottom: 10px;
+}
+label{
+	display: block;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+select{
+		font: 12px 'Open Sans', Helvetica, Arial, serif, sans-serif;
+		width: 200px;
+		height: 30px;
+}
+input{
+	width: 200px;
+}
+.btn-default{
+	background: #FFCD00;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+a.advancedSearch{
+	font-style: italic;
+	padding-left: 10px;
+	font-size: 13px;
+}
+.listadoMaquinarias{
+	margin: 0px;
+	padding: 0px;
+}
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+.dealer-logo {
+	padding: 10px;
 }

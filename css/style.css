@@ -19,18 +19,11 @@ body{
 
 .browser-cat {
 	text-transform: uppercase;
-	vertical-align: baseline;
-
 }
 
 .browser-cat h5 {
 	color: #ff7777;
 	border-bottom: 1px solid #ff7777;
-	margin: 15px 0px 15px 35px;
-}
-
-.browser-cat ul{
-	margin-bottom: 20px;
 }
 
 .browser-cat ul li {
@@ -54,7 +47,7 @@ textarea {
 }
 
 #carDealers{
-	margin: 10px 0px 40px 0px;
+	margin-top: 10px;
 }
 
 .footer{
@@ -72,6 +65,9 @@ textarea {
 .contact-info{
 	color: #dddddd;
 	background-color: #333;
+	text-align: center;
+	padding: 15px;
+	font-size: 13px;
 }
 
 .imgFeatured{
@@ -133,8 +129,15 @@ a:hover {
 
 .title:hover{
 	color: #444444;
-
 }
+.contact{
+	color: #dddddd;
+}
+
+.space {
+	padding: 5px;
+}
+
 #featuredCars_tj_container .tj_wrapper ul li{
 	height: 250px;
 }
@@ -168,12 +171,17 @@ a:hover {
 }
  ul {
 	list-style: none;
+	padding: 0px;
 }
-li {
+.featuredCar li, .contact-info ul li, .footer-bottom ul li{
 	display: inline-flex;
 }
 .browser-li{
 	display: block;
+}
+
+.browser-col{
+	padding: 0px;
 }
 
 .featured {
@@ -264,10 +272,7 @@ a.advancedSearch{
 	padding-left: 10px;
 	font-size: 13px;
 }
-.listadoMaquinarias{
-	margin: 0px;
-	padding: 0px;
-}
+
 .multi-item-carousel{
   .carousel-inner{
     > .item{
@@ -306,4 +311,42 @@ a.advancedSearch{
 
 .dealer-logo {
 	padding: 10px;
+}
+
+.contact-info ul li.facebook {
+	background: transparent url(../files/icon-set.png) no-repeat 0px -202px;
+}
+
+.footer-bottom{
+	text-transform: uppercase;
+	background-color: #000000;
+	padding-left: 20px;
+	padding-top: 20px;
+
+}
+
+.footer-bottom ul li a, .footer-notice, .footer-notice a{
+	color: #eeeeee;
+	margin-left: 10px;
+}
+
+.footer-notice{
+	text-align: right;
+}
+
+.foto-flia {
+	width:260px;
+	float:left;
+	margin-right:10px;
+}
+
+.listado-vehiculos{
+	border-bottom: 1px dotted #e2e2e2;
+	margin-top: 15px;
+}
+
+.attachment-tiny{
+	border:#999 1px solid;
+	width: 60px;
+	height:40px;
 }

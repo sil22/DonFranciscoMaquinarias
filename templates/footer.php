@@ -28,33 +28,56 @@
 		<!-- end - #footer -->
 
 		<!-- #footer-contact-info -->
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12 col-xs-12 contact-info">
 					<ul>
-						<li class="address">Ruta 228 Km. 2, Necochea. Bs As (ARG)</li>
-						<li class="tel">(02262) 421369</li>
-						<li class="tel">(02262) 15567543</li>
-						<li class="email"><a href="mailto:carinacools@donfranciscomaquinarias.com">carina@donfranciscomaquinarias.com</a></li>
-						<li class="facebook"><a href="https://www.facebook.com/pages/Don-Francisco-Maquinarias/160607427288244?fref=ts" target="_blank">Facebook</a></li>			</ul>
+						<li class="space">
+							<div>
+								<span class="glyphicon glyphicon-home space" aria-hidden="true"></span>Ruta 228 Km. 2, Necochea. Bs As (ARG)
+							</div>
+						</li>
+						<li class="space">
+							<div>
+							<span class="glyphicon glyphicon-phone-alt space" aria-hidden="true"></span>(02262) 421369
+						</div>
+						</li>
+						<li class="space">
+							<div>
+							<span class="glyphicon glyphicon-phone space" aria-hidden="true"></span>(02262) 15567543
+						</div>
+						</li>
+						<li class="space">
+							<div>
+							<span class="glyphicon glyphicon-envelope space" aria-hidden="true"></span>
+								<a class="contact" href="mailto:carinacools@donfranciscomaquinarias.com">carina@donfranciscomaquinarias.com</a>
+							</div>
+						</li>
+						<li class="space">
+							<div>
+									<i class="fa fa-facebook-official space" aria-hidden="true"></i>
+									<a class="contact" href="https://www.facebook.com/pages/Don-Francisco-Maquinarias/160607427288244?fref=ts" target="_blank">Facebook</a>
+							</div>
+						</li>
+						</ul>
 					</div>
 				</div>
-			</div>
 			<!-- end - #footer-contact-info -->
 
 			<!-- #footer-bottom-->
-			<div id="footer-bottom" class="container">
-				<div class="container_12 contact clearfix">
-					<div class="grid_8 footer-menu alpha">
-						<div class="footer-nav"><ul id="menu-footer-menu" class="clearfix">
-							<li id="menu-item-43" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43"><a href="http://donfranciscomaquinarias.com/">Inicio</a></li>
-							<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="http://donfranciscomaquinarias.com/nosotros.php">Nosotros</a></li>
-							<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-41"><a href="http://donfranciscomaquinarias.com/ubicacion.php">Ubicación</a></li>
-							<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a href="http://donfranciscomaquinarias.com/">Nuevos y Usados</a></li>
-							<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="http://donfranciscomaquinarias.com/contacto.php">Contacto</a></li>
-						</ul></div>		</div>
-						<div class="grid_4 footer-notice omega">copyright © 2013 <a href="http://www.realview-la.com/" target="_blank">Realview</a></div>
+				<div class="row footer-bottom">
+					<div class="col-md-offset-2 col-md-4 col-xs-12">
+							<ul>
+								<li><a href="http://donfranciscomaquinarias.com/">Inicio</a></li>
+								<li><a href="http://donfranciscomaquinarias.com/nosotros.php">Nosotros</a></li>
+								<li><a href="http://donfranciscomaquinarias.com/ubicacion.php">Ubicación</a></li>
+								<li><a href="http://donfranciscomaquinarias.com/">Nuevos y Usados</a></li>
+								<li><a href="http://donfranciscomaquinarias.com/contacto.php">Contacto</a></li>
+							</ul>
 					</div>
+						<div class="col-md-4 col-xs-12 footer-notice">copyright © 2013 <a href="http://www.realview-la.com/" target="_blank">Realview</a>
+						</div>
+					</div>
+
 				</div>
-				<div class="clear"></div>
 				<!-- end - #footer-bottom -->

@@ -12,7 +12,7 @@
 <!-- #featured-cars -->
 <div class="container" id="featuredCars">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-12">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-12 featuredCar">
 
       <h4 class="section-title section-line">Maquinarias</h4>
 

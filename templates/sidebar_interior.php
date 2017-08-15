@@ -1,5 +1,5 @@
 <div id="homeSearch">
-	<h3 class="section-line section-tittle">Buscar Maquinaria</h3>
+	<h4 class="section-line section-tittle">Buscar Maquinaria</h4>
 
 		<form id="searchAutosBox48724494362" action="" method="get">
 			<div class="form-group">
@@ -247,7 +247,7 @@
 
 <div class="col-md-12 col-xs-12">
 
-	<h3 class="section-line section-tittle">Últimas Maquinarias</h3>
+	<h4 class="section-line section-tittle">Últimas Maquinarias</h4>
 
 	<ul>
 
@@ -291,24 +291,25 @@
 
 	</ul>
 </div>
-<div class="col-md-12 col-xs-12">
+<div class="col-md-12 col-xs-12 browser-cat">
 
-	<h3 class="section-line section-tittle">Buscar por marcas</h3>
+	<h4 class="section-line section-tittle">Buscar por marcas</h4>
 
 	<ul>
-		<li><a href="search.php?marca=Lecar">Lecar</a></li>
-		<li><a href="search.php?marca=Bertini">Bertini</a></li>
-		<li><a href="search.php?marca=Pozzi">Pozzi</a></li>
-		<li><a href="search.php?marca=Erca">Erca</a></li>
-		<li><a href="search.php?marca=Pauny">Pauny</a></li>
-		<li><a href="search.php?marca=Baima">Baima</a></li>
-		<li><a href="search.php?marca=Praba">Praba</a></li>
-		<li><a href="search.php?marca=Cestari">Cestari</a></li>
-		<li><a href="search.php?marca=Don Roque">Don Roque</a></li>
-		<li><a href="search.php?marca=De Grande">De Grande</a></li>
-		<li><a href="search.php">Otras</a></li>
+		<div class="col-md-6 browser-col">
+		<li class="browser-li"><a href="search.php?marca=Lecar">Lecar</a></li>
+		<li class="browser-li"><a href="search.php?marca=Bertini">Bertini</a></li>
+		<li class="browser-li"><a href="search.php?marca=Pozzi">Pozzi</a></li>
+		<li class="browser-li"><a href="search.php?marca=Erca">Erca</a></li>
+		<li class="browser-li"><a href="search.php?marca=Pauny">Pauny</a></li>
+		<li class="browser-li"><a href="search.php">Otras</a></li>
+	</div>
+	<div class="col-md-6 browser-col">
+		<li class="browser-li"><a href="search.php?marca=Baima">Baima</a></li>
+		<li class="browser-li"><a href="search.php?marca=Praba">Praba</a></li>
+		<li class="browser-li"><a href="search.php?marca=Cestari">Cestari</a></li>
+		<li class="browser-li"><a href="search.php?marca=Don Roque">Don Roque</a></li>
+		<li class="browser-li"><a href="search.php?marca=De Grande">De Grande</a></li>
+	</div>
 	</ul>
-</div>
-
-
 </div>

@@ -41,7 +41,7 @@
 				</div>		</div>
 
 
-		<div class="col-md-4 col-xs-10 col-sm-6">
+		<div class="col-md-4 col-xs-12 col-sm-10">
 			<?php include('templates/sidebar.php'); ?>
 		</div>
 

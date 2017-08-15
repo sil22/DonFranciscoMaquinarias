@@ -34,34 +34,8 @@
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
-	<!-- Scripts propios -->
-	<script type="text/javascript" src="js/jquery00.js"></script>
-	<script type="text/javascript" src="js/superfis.js"></script>
-	<script type="text/javascript" src="js/jquery01.js"></script>
-	<script type="text/javascript" src="js/jquery02.js"></script>
-	<script type="text/javascript" src="js/jquery03.js"></script>
-	<script type="text/javascript" src="js/sliding0.js"></script>
+	<script src="js/jquery.min.js"></script>
 
-	<script type="text/javascript">
-	jQuery(document).ready(function() {
-
-		<!-- Superfish -->
-		jQuery('.navigation ul').superfish({
-			delay: 200,
-			animation: {opacity:'show',height:'show'},
-			speed: 500,
-			autoArrows: false,
-			dropShadows: false
-		});
-
-		var $j = jQuery.noConflict();
-
-		<!-- Alert -->
-		$j(".alert").delay(5000).slideUp(350);
-
-
-	});
-	</script>
 </head>
 
 <body>
@@ -73,7 +47,7 @@
 	<?php include('templates/empresa.php'); ?>
 </section>
 
-<footer>
+<footer class="footer">
 	<?php include('templates/footer.php'); ?>
 </footer>
 

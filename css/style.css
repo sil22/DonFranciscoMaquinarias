@@ -320,3 +320,23 @@ a.advancedSearch{
 		margin: 0px;
 	}
 }
+
+.img-ubicacion{
+	border:#CCC 1px solid;
+}
+
+.features{
+	border-bottom: 1px dotted #e2e2e2;
+}
+
+.num-navegacion{
+	border-bottom: 3px solid #c8c8ae;
+	text-align: center;
+	background-color: rgba(215, 211, 206, 0.43);
+}
+
+.num-navegacion li {
+	display: inline-flex;
+padding: 10px 20px 0px 20px;
+margin: 0px;
+}

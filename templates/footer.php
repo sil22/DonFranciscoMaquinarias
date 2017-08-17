@@ -71,7 +71,7 @@
 								<li><a href="http://donfranciscomaquinarias.com/">Inicio</a></li>
 								<li><a href="http://donfranciscomaquinarias.com/nosotros.php">Nosotros</a></li>
 								<li><a href="http://donfranciscomaquinarias.com/ubicacion.php">Ubicación</a></li>
-								<li><a href="http://donfranciscomaquinarias.com/">Nuevos y Usados</a></li>
+								<li><a href="http://donfranciscomaquinarias.com/search.php">Nuevos y Usados</a></li>
 								<li><a href="http://donfranciscomaquinarias.com/contacto.php">Contacto</a></li>
 							</ul>
 					</div>

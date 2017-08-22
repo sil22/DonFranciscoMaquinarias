@@ -42,7 +42,6 @@
           while($row=mysql_fetch_array($resultados)){
 
             ?>
-
             <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="row">
@@ -83,8 +82,13 @@
                       <h4 class="title"><?=ucwords($row['model'])?></h4>
                       <h5 class="descrip">Descripción:</h5>
                       <h5><?=ucwords($row['note'])?></h5>
-                    <a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>">
-                    <h5>Ver mas..</h5></a>
+
+                      <a href="item.php?maquinaria=<?=$row['id_vehiculo']?>">
+                        <button type="button" class="btn btn-default" name="button">Más información
+                      </button></a>
+                      <button src="<?=$row['min_url']?>" class="modalButton btn btn-default" type="button" name="button">
+                        Mas imágens
+                      </button>
                 </div>
               </li>
             </div>
@@ -98,12 +102,9 @@
     </div>
   </div>
 
-
-
-
   <script type="text/javascript">
-  $(function() {
-    $('.imgFeatured').on('click', function() {
+  $(function () {
+      $('.modalButton').on('click', function() {
       $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
       $('#enlargeImageModal').modal('show');
     });

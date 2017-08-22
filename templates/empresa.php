@@ -10,7 +10,7 @@
 			<div class="foto-flia">
 				<a href="files/IMG_2971-1024x768.jpg">
 					<figure>
-						<img src="files/IMG_2971-1024x768.jpg" class="img-responsive image-zoom">
+						<img src="files/IMG_2971-1024x768.jpg" class="img-responsive img-rounded">
 					</figure>
 					<figcaption>Junto a su Padre Francisco y su hijo pequeño Mateo</figcaption>
 				</a>
@@ -19,7 +19,6 @@
 				<p>Los Fierros del Campo, esas modernas maquinarias que se utilizan para la producción y elaboración de los frutos de la tierra, han sido objeto en los últimos años de la incorporación de la más alta tecnología, y así, de ser aquellos elementos rústicos y torpes, han pasado a constituírse en elegantes, prácticas y confortables maquinarias que facilitan las labores de manera tal, que en algunos casos, para sus usuarios, el trabajo se realiza en forma placentera y hasta cómoda.</p>
 				<br>
 				<p>Claro, tal vez a algún lector le puede sonar mal, que a alguien le genere placer trabajar, pero sólo basta con recordar lo que sucedía hace poco más de 40 años atrás, cuando levantar las cosechas era todo un sacrificio para la gente, muy distinto a lo que ocurre hoy con los modernos elementos de labranza y demás que encontramos en el mercado, y que sin duda han sido muy bienvenidos para quienes tienen la responsabilidad de manejarlos.</p>
-				<br>
 				<p>Y en ese mercado lleno de propuestas de alta tecnología, la Argentina se ha insertado de igual a igual a las grandes potencias con sus Fierros, como una muestra cabal de la capacidad de sus técnicos, que han interpretado cuales son los requerimientos de los productores y han aportado su capacidad creativa para satisfacer esa demanda.</p>
 				<br>
 				<p>Y en ese combo que involucra a productores, fabricantes, técnicos y comerciantes del ramo, la mujer ha ocupado un rol preponderante, ubicándose a la par de los hombres para aportar ideas, discutir propuestas y poner sobre la mesa los puntos de vista y soluciones a los problemas del sector, en un plano igualitario. Tal es el caso de Carina Cools, que está al frente de Don Francisco Maquinarias desde hace doce años, y se ha convertido en un referente de la región comercializando todo tipo de máquinas. Su conocimiento es tal, que asesora, aconseja y propone tal o cual herramienta, y hasta las maneja, como nos ha tocado verla al comando de gigantescos tractores.</p>

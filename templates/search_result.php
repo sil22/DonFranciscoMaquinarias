@@ -98,32 +98,27 @@ $resultados =  $db->consulta($sql);
 					?>
 					<div class="col-md-12">
 						<div class="col-md-6">
-							<a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" class="image-zoom main-thumb-zoom" target="_blank">
+							<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" class="image-zoom main-thumb-zoom" target="_blank">
 								<img src="<?=$row['min_url']?>" class="attachment-main img-responsive imgFeatured img-rounded" alt="default-thumb" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" />
 								<span class="zoom-icon"></span>
 							</a>
 						</div>
 						<div class="col-md-6">
-							<h3><a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h3>
+							<h4 class="section-title title"><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h4>
 							<div class="col-md-8">
 								<ul>
-									<li class="features">Marca :<?=ucwords($row['marc'])?></li>
+									<li class="features">Marca : <?=ucwords($row['marc'])?></li>
 									<li class="features">Modelo : <?=ucwords($row['model'])?></li>
 									<li class="features">Estado : <?=ucwords($row['used'])?> </li>
 									<li class="features">Año: <?=ucwords($row['year'])?> </li>
 								</ul>
 							</div>
 							<div class="col-md-4">
-								<ul>
-									<li><span>Precio</span>$ <?=ucwords($row['price'])?></li>
-								</ul>
-								<a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" class="button" target="_blank" style="margin-top:60px">Ver detalles</a>
+									<span>Precio $ <?=ucwords($row['price'])?></span>
+								<button type="button" class="btn btn-default mas" name="button"><a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" class="button" target="_blank" style="margin-top:60px">Ver detalles</a></button>
 							</div>
 						</div>
 					</div>
-
-
-
 
 				<?php } }  ?>
 
@@ -137,12 +132,12 @@ $resultados =  $db->consulta($sql);
 							$page = 0;
 							for($i=1; $i+10 < $cantidad; $i=$i+10) {
 								$page++;
-								$url = 'http://donfranciscomaquinarias.com/search.php?marca='.$marca.'&modelo='.$modelo.'&anio='.$year.'&nuevo='.$estado.'&rubro='.$rubro.'&page='.$page.'&auto_search=true&searchAutosBoxButton=Buscar';
+								$url = 'search.php?marca='.$marca.'&modelo='.$modelo.'&anio='.$year.'&nuevo='.$estado.'&rubro='.$rubro.'&page='.$page.'&auto_search=true&searchAutosBoxButton=Buscar';
 								?>
 								<li <?php if($actual == $page) echo 'class="current"'; ?> >
-								<a href="<?=$url?>"class="pager"><?=$page?></a>
+									<a href="<?=$url?>"class="pager"><?=$page?></a>
 								</li>
-							<?php
+								<?php
 							}
 							?>
 						</ul>
@@ -154,8 +149,8 @@ $resultados =  $db->consulta($sql);
 
 			</div><!-- end - .search-results -->
 
-		<div class="col-md-4 col-xs-8">
-			<?php include('templates/sidebar_interior.php'); ?>
+			<div class="col-md-4 col-xs-8">
+				<?php include('templates/sidebar_interior.php'); ?>
+			</div>
 		</div>
 	</div>
-</div>

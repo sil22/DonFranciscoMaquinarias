@@ -258,7 +258,9 @@
 
 		$db->conectar();
 
-		$resultados =  $db->consulta('SELECT * FROM vehiculos,imagenes WHERE vehiculos.id  = imagenes.id_vehiculo AND imagenes.portada = "si" ORDER BY vehiculos.fecha DESC LIMIT 5 ');
+		$resultados =  $db->consulta('SELECT * FROM vehiculos,imagenes
+			WHERE vehiculos.id  = imagenes.id_vehiculo AND imagenes.portada = "si"
+			 ORDER BY vehiculos.fecha DESC LIMIT 5 ');
 
 		while($row=mysql_fetch_array($resultados)){
 

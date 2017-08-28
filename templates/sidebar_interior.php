@@ -1,3 +1,5 @@
+<div class="col-md-12 col-xs-12">
+
 <div id="homeSearch">
 	<h4 class="section-line section-tittle">Buscar Maquinaria</h4>
 
@@ -243,6 +245,7 @@
 				<button type="submit" class="btn btn-default" id="searchAutosBoxButton" name="searchAutosBoxButton" value="Buscar">Buscar</button>
 			</div>
 		</form>
+</div>
 </div>
 
 <div class="col-md-12 col-xs-12">

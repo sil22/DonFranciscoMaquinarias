@@ -1,10 +1,10 @@
 <!--#empresa-->
 <div class="container">
 	<div class="row">
-		<div class="col-xs-12  col-md-12">
+		<div class="col-xs-8  col-md-12">
 			<h4 class="section-line section-tittle">Nosotros</h4>
 		</div>
-		<div class="col-xs-12 col-md-8">
+		<div class="col-xs-8 col-md-8">
 			<!-- #content -->
 			<h4>Carina y Los Fierros del Campo</h4>
 			<div class="foto-flia">

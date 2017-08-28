@@ -1,7 +1,7 @@
 
 <div class="container-fluid imgFront">
   <div class="row">
-    <div class="col-xs-12 col-md-12 col-lg-12 center-block">
+    <div class="col-xs-12 col-md-12 center-block">
       <img src="http://donfranciscomaquinarias.com/files/front_don_francisco.jpg" class="img-responsive center-block front" alt="front image">
 
     </div>
@@ -13,10 +13,8 @@
 <div class="container" id="featuredCars">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-12">
-
       <h4 class="section-title section-line">Maquinarias</h4>
       <ul>
-
         <?php
 
         require_once('admin/clase_DB.php');
@@ -46,7 +44,6 @@
               <div class="modal-dialog modal-lg" role="document">
                 <div class="row">
                   <div class="col-md-8 col-md-offset-2">
-
                     <div class="modal-content center-block">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -72,24 +69,27 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-8 col-md-4 featured">
+            <div class="col-xs-12 col-md-4 featured">
               <li>
-                <div class="col-xs-6 col-md-6">
+                <div class="col-xs-6 col-md-6 text-center">
                   <img src="<?=$row['min_url']?>" class="img-responsive imgFeatured img-rounded" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
-                  <span class="zoom-icon"></span>
-                </div>
+                                  </div>
                 <div class=" col-xs-6 col-md-6 textFeatured">
                       <h4 class="title"><?=ucwords($row['model'])?></h4>
                       <h5 class="descrip">Descripción:</h5>
                       <h5><?=ucwords($row['note'])?></h5>
+                </div>
+                <div class="col-md-4 col-xs-12">
 
                       <a href="item.php?maquinaria=<?=$row['id_vehiculo']?>">
-                        <button type="button" class="btn btn-default" name="button">Más información
+                        <button type="button" class="btn btn-default mas" name="button">Más información
                       </button></a>
-                      <button src="<?=$row['min_url']?>" class="modalButton btn btn-default" type="button" name="button">
-                        Mas imágens
-                      </button>
+                        <button src="<?=$row['min_url']?>" class="modalButton mas btn btn-default" type="button" name="button">
+                          Mas imágenes
+                        </button>
+
                 </div>
+
               </li>
             </div>
           <?php }

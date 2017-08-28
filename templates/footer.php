@@ -12,7 +12,7 @@
 		</div>
 		<div class="col-md-4 col-xs-12">
 			<h4>Buscanos en</h4>
-				<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FDon-Francisco-Maquinarias%2F160607427288244&amp;width=300&amp;height=200&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=false&amp;appId=185172994932129" scrolling="no" frameborder="0"  allowTransparency="true"></iframe>
+				<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FDon-Francisco-Maquinarias%2F160607427288244&amp;width=300&amp;height=200&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=false&amp;appId=185172994932129" scrolling="no" frameborder="0" class="embed-responsive-item" allowTransparency="true"></iframe>
 			</div>
 			<div class="col-md-4 col-xs-12">
 					<h4>Don Francisco</h4>
@@ -75,9 +75,10 @@
 								<li><a href="http://donfranciscomaquinarias.com/contacto.php">Contacto</a></li>
 							</ul>
 					</div>
-						<div class="col-md-4 col-xs-12 footer-notice">copyright © 2013 <a href="http://www.realview-la.com/" target="_blank">Realview</a>
+						<div class="col-md-4 col-xs-12">copyright © 2013 <a href="http://www.realview-la.com/" target="_blank">Realview</a>
 						</div>
 					</div>
 
 				</div>
+
 				<!-- end - #footer-bottom -->

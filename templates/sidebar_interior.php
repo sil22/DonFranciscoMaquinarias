@@ -272,7 +272,7 @@
 
 			<li>
 				<div class=col-md-4>
-				<a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" class="opac" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+				<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" class="opac" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
 				<figure>
 					<img src="<?=$row['min_url']?>" class="attachment-tiny" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"></a>
 				</figure>
@@ -280,7 +280,7 @@
 				<div class="col-md-8">
 					<figcaption>
 						<h5>
-							<a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>">
+							<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>">
 								<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>
 							</a>
 								<span class="ad-price"> - $ <?=$row['price']?></span>

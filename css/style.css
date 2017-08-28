@@ -392,3 +392,9 @@ span{
 .img-mini{
 	width: 90px;
 }
+
+.detalles {
+	font-size: 10px;
+	font-weight:bold;
+	margin-top: 35px;
+}

@@ -64,7 +64,8 @@ imagenes.portada = "si"
 ORDER BY vehiculos.fecha DESC LIMIT '.$page.',10';
 
 $resultados =  $db->consulta($sql);
-
+var_dump($resultados);
+print_r($resultados);
 ?>
 <div class="container">
 	<div class="row">
@@ -96,16 +97,16 @@ $resultados =  $db->consulta($sql);
 
 				while($row=mysql_fetch_array($resultados)){
 					?>
-					<div class="col-md-12">
-						<div class="col-md-6">
-							<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" class="image-zoom main-thumb-zoom" target="_blank">
+
+					<div class="col-md-12 col-xs-12">
+						<div class="col-md-6 col-xs-12">
+							<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"  target="_blank">
 								<img src="<?=$row['min_url']?>" class="attachment-main img-responsive imgFeatured img-rounded" alt="default-thumb" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" />
-								<span class="zoom-icon"></span>
 							</a>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-xs-12">
 							<h4 class="section-title title"><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h4>
-							<div class="col-md-8">
+							<div class="col-md-8 col-xs-10">
 								<ul>
 									<li class="features">Marca : <?=ucwords($row['marc'])?></li>
 									<li class="features">Modelo : <?=ucwords($row['model'])?></li>
@@ -113,9 +114,9 @@ $resultados =  $db->consulta($sql);
 									<li class="features">Año: <?=ucwords($row['year'])?> </li>
 								</ul>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-12">
 									<span>Precio $ <?=ucwords($row['price'])?></span>
-								<button type="button" class="btn btn-default mas" name="button"><a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>" class="button" target="_blank" style="margin-top:60px">Ver detalles</a></button>
+								<button type="button" class="btn btn-default detalles" name="button"><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" target="_blank" >Ver detalles</a></button>
 							</div>
 						</div>
 					</div>

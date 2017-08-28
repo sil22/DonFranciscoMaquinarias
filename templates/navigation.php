@@ -16,7 +16,7 @@
       </button>
 
         <div class="col-md-6 col-md-offset-6 col-xs-12  ">
-          <a class="navbar-brand" id="logo" href="http://donfranciscomaquinarias.com/"><img  class="img-responsive center-block" src="files/logo0000.png" alt="logo"></a>
+          <a class="navbar-brand" id="logo" href="http://donfranciscomaquinarias.com/"><img class="img-responsive center-block" src="files/logo0000.png" alt="logo"></a>
 
         </div>
       </div>

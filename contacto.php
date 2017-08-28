@@ -28,6 +28,10 @@
 </head>
 
 <body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-xs-10">
+
 <header>
 	<?php include('templates/navigation.php'); ?>
 </header>
@@ -41,6 +45,11 @@
 	<footer class="footer">
 	<?php include('templates/footer.php'); ?>
 </footer>
+
+	</div>
+	</div>
+	</div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -12,7 +12,7 @@
 <!-- #featured-cars -->
 <div class="container" id="featuredCars">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-12">
+    <div class="col-xs-12 col-sm-12 col-md-12">
       <h4 class="section-title section-line">Maquinarias</h4>
       <ul>
         <?php
@@ -57,7 +57,9 @@
                   <a href="item.php?maquinaria=<?=$row['id_vehiculo']?>">
                     <button type="button" class="btn btn-default mas" name="button">Más información
                     </button></a>
-                    <button src="<?=$row['min_url']?>" class="modalButton mas btn btn-default" type="button" name="button">
+                    <?var_dump($row['id_vehiculo']);?>
+
+                    <button data-id="<?=$row['id_vehiculo']?>" class="modalButton mas btn btn-default" type="button" name="button">
                       Mas imágenes
                     </button>
 
@@ -67,7 +69,6 @@
               </div>
 
             <?php }
-
             $db->desconectar();
 
             ?>
@@ -89,7 +90,6 @@
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
                       <?php
-                      var_dump($id);
                       $db->conectar();
                       $resultados =  $db->consulta('SELECT * FROM imagenes WHERE id_vehiculo='.$id.' ORDER BY portada DESC');
                       $imagenes = '';
@@ -119,7 +119,7 @@
                         </div>
                         <div class="item">
                           <img src="<?php echo $imagenes[$i]['min_url']; ?>" class="img-responsive img-rounded">
-                            </div>
+                        </div>
                       </div>
                     <?php	} ?>
 
@@ -143,13 +143,4 @@
       </div>
     </div>
 
-
-    <script type="text/javascript">
-    $(function () {
-      $('.modalButton').on('click', function() {
-        $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
-        $('#enlargeImageModal').modal('show');
-      });
-    });
-    </script>
     <!-- end - #featured-cars -->

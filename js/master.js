@@ -1,4 +1,6 @@
 // featured.php - modal img
+$("document").ready(function () {
+
 $(function () {
   $('.modalButton').on('click', function() {
     $('.enlargeImageModalSource').attr($(this).attr("data-id"));
@@ -62,3 +64,6 @@ $j(document).ready(function(){
 
 
 })
+
+
+});

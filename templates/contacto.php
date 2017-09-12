@@ -9,7 +9,7 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-12  col-md-12">
+    <div class="col-xs-12 col-md-12 col-sm-12">
       <h3 class="section-line section-tittle">Contacto</h3>
     </div>
     <!-- .single-auto-alert -->
@@ -46,7 +46,7 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
           <button type="submit" id="submitButton" name="submitButton" class="btn btn-default">Enviar Mensaje</button>
         </form>
 
-        <div class="col-xs-10 col-md-6">
+        <div class="col-xs-12 col-md-6 col-sm-12">
             <h4 class="section-title section-line">Datos del vendedor</h4>
             <ul>
               <li>Vendedor: Carina Cools</li>
@@ -57,7 +57,7 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
           </div>
   </div>
 
-    <div class="col-md-4 col-xs-4 col-md-offset-1">
+    <div class="col-md-4 col-xs-12 col-md-offset-1 col-sm-12">
       <?php include('templates/sidebar_interior.php'); ?>
     </div>
 </div>

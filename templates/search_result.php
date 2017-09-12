@@ -98,7 +98,7 @@ print_r($resultados);
 				while($row=mysql_fetch_array($resultados)){
 					?>
 
-					<div class="col-md-12 col-xs-12">
+					<div class="col-md-12 col-xs-12 col-sm-12">
 						<div class="col-md-6 col-xs-12">
 							<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"  target="_blank">
 								<img src="<?=$row['min_url']?>" class="attachment-main img-responsive imgFeatured img-rounded" alt="default-thumb" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" />
@@ -150,7 +150,7 @@ print_r($resultados);
 
 			</div><!-- end - .search-results -->
 
-			<div class="col-md-4 col-xs-8">
+			<div class="col-md-4 col-xs-12 col-sm-12">
 				<?php include('templates/sidebar_interior.php'); ?>
 			</div>
 		</div>

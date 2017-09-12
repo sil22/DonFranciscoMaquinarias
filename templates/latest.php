@@ -26,11 +26,11 @@
 						vehiculos.used = "usado"
 						ORDER BY
 						vehiculos.destacado ASC,vehiculos.fecha DESC
-						LIMIT 9
+						LIMIT 4
 						');
 
 						while($row=mysql_fetch_array($resultados)){
-
+							
 							?>
 
 							<div class="item active">

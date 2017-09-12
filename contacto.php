@@ -21,6 +21,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/master.js" charset="utf-8"></script>
 
 	<title>Don Francisco Maquinarias</title>
 
@@ -30,7 +31,7 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-12 col-xs-10">
+			<div class="col-md-12 col-xs-12 col-sm-12">
 
 <header>
 	<?php include('templates/navigation.php'); ?>

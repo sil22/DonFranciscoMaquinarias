@@ -1,10 +1,10 @@
 <!--#empresa-->
 <div class="container">
 	<div class="row">
-		<div class="col-xs-8  col-md-12">
+		<div class="col-xs-8  col-md-12 col-sm-12">
 			<h4 class="section-line section-tittle">Nosotros</h4>
 		</div>
-		<div class="col-xs-8 col-md-8">
+		<div class="col-xs-8 col-md-8 col-sm-12">
 			<!-- #content -->
 			<h4>Carina y Los Fierros del Campo</h4>
 			<div class="foto-flia">
@@ -32,7 +32,7 @@
 			<div class="fotos-empresa">
 				<ul>
 					<li>
-						<div class="col-md-6 col-xs-10">
+						<div class="col-md-6 col-xs-10 col-sm-12">
 							<a href="files/IMG_2970-1024x768.jpg" class="image-zoom home-thumb-zoom">
 								<figure>
 									<img src="files/IMG_2970-1024x768.jpg" class="img-responsive">
@@ -42,7 +42,7 @@
 						</div>
 					</li>
 					<li>
-						<div class="col-md-6 col-xs-10">
+						<div class="col-md-6 col-xs-10 col-sm-12">
 							<a href="files/IMG_2973-1024x768.jpg" class="image-zoom home-thumb-zoom">
 								<figure>
 									<img src="files/Necochea-20130219-01614.jpg" class="img-responsive">
@@ -54,7 +54,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="col-md-4 col-xs-8">
+		<div class="col-md-4 col-xs-8 col-sm-12">
 
 			<?php include('templates/sidebar_interior.php'); ?>
 		</div>

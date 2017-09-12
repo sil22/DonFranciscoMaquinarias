@@ -1,7 +1,7 @@
 <!-- #browser -->
 <div class="container">
 	<div class="row">
-		<div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 			<h4 class="section-title section-line">Maquinarias</h4>
 				<div class="row">
 					<div class="col-md-6 browser-cat">
@@ -41,7 +41,7 @@
 				</div>		</div>
 
 
-		<div class="col-md-4 col-xs-12 col-sm-10">
+		<div class="col-md-4 col-xs-12 col-sm-12">
 			<?php include('templates/sidebar.php'); ?>
 		</div>
 

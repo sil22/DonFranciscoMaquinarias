@@ -1,7 +1,7 @@
 <!-- #car-dealers -->
 <div class="container">
 	<div class="row">
-		<div class="col-xs-12 col-md-12 col-sm-8">
+		<div class="col-xs-12 col-md-12 col-sm-12">
 			<h4 class="section-title section-line">Nuestras marcas</h4>
 </div>
 <div class="row">

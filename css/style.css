@@ -9,6 +9,10 @@ body{
 	font-size: 14px ;
 }
 
+p {
+	text-transform: lowercase;
+}
+
 #header {
 	border-top: 5px solid #000000;
 	border-bottom: 1px solid #e4e4e4;
@@ -76,9 +80,14 @@ textarea {
 
 .imgFeatured{
 	width: 1000px;
-	height: 200px;
+	height: 230px;
 	margin: 10px 0px 10px 0px;
 	cursor: pointer;
+}
+
+.buttons {
+	padding-left: 0px !important;
+	margin-left: 0px !important;
 }
 
 #logo {
@@ -197,11 +206,12 @@ ul {
 
 .featured {
 	background-color: rgba(215, 211, 206, 0.43);
-/*	width: 350px !important;*/
+
 	border-radius: 15px;
 	border: solid 2px rgba(179, 176, 173, 0.63);
 	padding: 5px;
 	-webkit-box-shadow: inset 0 0 5px#bbb;
+	height: 260px !important;
 }
 
 .tj_nav  {
@@ -397,4 +407,10 @@ span{
 	font-size: 10px;
 	font-weight:bold;
 	margin-top: 35px;
+}
+
+@media only screen and (min-width: 992px) {
+	.container {
+	width: 1050px;
+	}
 }

@@ -30,7 +30,7 @@
 						');
 
 						while($row=mysql_fetch_array($resultados)){
-							
+
 							?>
 
 							<div class="item active">
@@ -38,19 +38,19 @@
 								<div class="col-xs-4">
 									<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" target="_blank">
 									<div class="carousel-caption">
-										<h6><a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
+										<h6><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
 									</div>
 								</div>
 								<div class="col-xs-4">
 									<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" target="_blank">
 									<div class="carousel-caption">
-										<h6><a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
+										<h6><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
 									</div>
 								</div>
 								<div class="col-xs-4">
 									<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" target="_blank">
 									<div class="carousel-caption">
-										<h6><a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
+										<h6><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
 									</div>
 								</div>
 							</div>
@@ -60,19 +60,19 @@
 									<div class="col-xs-4">
 										<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
 										<div class="carousel-caption">
-											<a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
+											<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
 										</div>
 									</div>
 									<div class="col-xs-4">
 										<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
 										<div class="carousel-caption">
-											<a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
+											<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
 										</div>
 									</div>
 									<div class="col-xs-4">
 										<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
 										<div class="carousel-caption">
-											<a href="http://donfranciscomaquinarias.com/item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
+											<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
 										</div>
 									</div>
 								</div>

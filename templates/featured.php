@@ -29,13 +29,12 @@
           vehiculos,imagenes
           WHERE
           vehiculos.id  = imagenes.id_vehiculo AND
-          imagenes.portada = "si" AND
-          vehiculos.destacado = "si"
+          vehiculos.destacado = "si" AND
+          imagenes.portada = "si"
           ORDER BY
+          -- RAND(),
           vehiculos.id  DESC
           LIMIT 3 ');
-
-
 
           while($row=mysql_fetch_array($resultados)){
 
@@ -49,28 +48,24 @@
                   <img src="<?=$row['min_url']?>" class="img-responsive imgFeatured img-rounded" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
                 </div>
                 <div class=" col-xs-6 col-md-6 textFeatured">
-                  <h4 class="title"><?=ucwords($row['model'])?></h4>
+                  <h4 class="title"><?=substr($row['model'], 0 ,15)?></h4>
                   <h5 class="descrip">Descripción:</h5>
-                  <h5><?=ucwords($row['note'])?></h5>
+                  <p>
+                  <?=substr($row['note'], 0, 60);?>...
+                </p>
                 </div>
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-6 col-xs-12 buttons">
                   <a href="item.php?maquinaria=<?=$row['id_vehiculo']?>">
-                    <button type="button" class="btn btn-default mas" name="button">Más información
-                    </button></a>
-                    <?var_dump($row['id_vehiculo']);?>
-
+                    <button type="button" class="btn btn-default mas" name="button">Más información</button>
+                  </a>
                     <button data-id="<?=$row['id_vehiculo']?>" class="modalButton mas btn btn-default" type="button" name="button">
-                      Mas imágenes
-                    </button>
-
+                      Mas imágenes</button>
                   </div>
-
                 </li>
               </div>
 
             <?php }
             $db->desconectar();
-
             ?>
           </ul>
         </div>
@@ -138,7 +133,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

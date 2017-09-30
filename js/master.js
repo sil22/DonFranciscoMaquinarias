@@ -1,4 +1,7 @@
 // featured.php - modal img
+
+;(function($){
+
 $("document").ready(function () {
 
 $(function () {
@@ -67,3 +70,4 @@ $j(document).ready(function(){
 
 
 });
+})(jQuery);

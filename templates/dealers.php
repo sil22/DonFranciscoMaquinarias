@@ -3,9 +3,13 @@
 	<div class="row">
 		<div class="col-xs-12 col-md-12 col-sm-12">
 			<h4 class="section-title section-line">Nuestras marcas</h4>
-</div>
-<div class="row">
-	<div class="col-md-6 col-xs-12" id="carDealers">
+		</div>
+		</div>
+		</div>
+
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 col-xs-12" id="carDealers">
 
 						<a href="search.php?marca=Lecar">
 							<img src="files/1.png" class="dealer-logo">
@@ -22,8 +26,6 @@
 						<a href="search.php?marca=Pauny">
 							<img src="files/6.png" class="dealer-logo">
 						</a>
-					</div>
-						<div class="col-md-6 col-xs-12" id="carDealers">
 
 						<a href="search.php?marca=Baima">
 							<img src="files/7.png" class="dealer-logo">

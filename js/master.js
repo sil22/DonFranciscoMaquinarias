@@ -11,6 +11,7 @@ $(function () {
   });
 });
 
+$('#img1').attr("src", "")
 
  // sidebar.php - search
 

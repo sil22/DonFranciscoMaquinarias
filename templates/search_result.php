@@ -64,8 +64,7 @@ imagenes.portada = "si"
 ORDER BY vehiculos.fecha DESC LIMIT '.$page.',10';
 
 $resultados =  $db->consulta($sql);
-var_dump($resultados);
-print_r($resultados);
+
 ?>
 <div class="container">
 	<div class="row">
@@ -116,7 +115,9 @@ print_r($resultados);
 							</div>
 							<div class="col-md-4 col-xs-12">
 									<span>Precio $ <?=ucwords($row['price'])?></span>
-								<button type="button" class="btn btn-default detalles" name="button"><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" target="_blank" >Ver detalles</a></button>
+								<button type="button" class="btn btn-default detalles" name="button">
+									<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" target="_blank">Ver detalles</a>
+								</button>
 							</div>
 						</div>
 					</div>

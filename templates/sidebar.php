@@ -3,7 +3,7 @@
 <h4 class="section-title section-line">Busqueda</h4>
 
 <div id="homeSearch" class="center-block">
-	<form id="homeSearchForm" action="http://donfranciscomaquinarias.com/search.php" method="get">
+	<form id="homeSearchForm" action="search.php" method="get">
 
 
 

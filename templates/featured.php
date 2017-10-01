@@ -1,4 +1,4 @@
-
+<!--- img-front --->
 <div class="container-fluid imgFront">
   <div class="row">
     <div class="col-xs-12 col-md-12 center-block">

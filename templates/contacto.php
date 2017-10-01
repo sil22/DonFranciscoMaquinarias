@@ -6,6 +6,7 @@ if($msj!='')
 echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; color:#000; font-size:14px; text-align:center; width:100%; " >'.$msj.'</div>';
 
 ?>
+<!-- #contacto --->
 
 <div class="container">
   <div class="row">

@@ -1,4 +1,5 @@
 <!-- #latest-cars -->
+
 <div id="latestCars" class="container">
 	<div class="row">
 		<div class="col-xs-12 col-sm-10 col-md-8 col-lg-12">
@@ -26,8 +27,9 @@
 						vehiculos.used = "usado"
 						ORDER BY
 						vehiculos.destacado ASC,vehiculos.fecha DESC
-						LIMIT 4
+						LIMIT 6
 						');
+
 
 						while($row=mysql_fetch_array($resultados)){
 
@@ -35,53 +37,53 @@
 
 							<div class="item active">
 								<div class="row">
-								<div class="col-xs-4">
-									<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" target="_blank">
-									<div class="carousel-caption">
-										<h6><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
-									</div>
-								</div>
-								<div class="col-xs-4">
-									<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" target="_blank">
-									<div class="carousel-caption">
-										<h6><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
-									</div>
-								</div>
-								<div class="col-xs-4">
-									<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" target="_blank">
-									<div class="carousel-caption">
-										<h6><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
-									</div>
-								</div>
-							</div>
-						</div>
-								<div class="item">
-									<div class="row">
 									<div class="col-xs-4">
-										<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+										<img src="<?=$row['min_url']?>" class="img-responsive img-carousel" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" target="_blank">
 										<div class="carousel-caption">
-											<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
+											<h5><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> </a></h5>
 										</div>
 									</div>
 									<div class="col-xs-4">
-										<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+										<img src="<?=$row['min_url']?>" class="img-responsive img-carousel" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" target="_blank">
 										<div class="carousel-caption">
-											<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
+											<h5><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> </a></h5>
 										</div>
 									</div>
 									<div class="col-xs-4">
-										<img src="<?=$row['min_url']?>" class="img-responsive attachment-main" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+										<img src="<?=$row['min_url']?>" class="img-responsive img-carousel" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" target="_blank">
 										<div class="carousel-caption">
-											<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h6>
+											<h5><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> </a></h5>
 										</div>
 									</div>
 								</div>
 							</div>
-							<?php }
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-4">
+										<img src="<?=$row['min_url']?>" class="img-responsive img-carousel" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+										<div class="carousel-caption">
+											<h5><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?></a></h5>
+										</div>
+									</div>
+									<div class="col-xs-4">
+										<img src="<?=$row['min_url']?>" class="img-responsive img-carousel" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+										<div class="carousel-caption">
+											<h5><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?></a></h5>
+										</div>
+									</div>
+									<div class="col-xs-4">
+										<img src="<?=$row['min_url']?>" class="img-responsive img-carousel" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
+										<div class="carousel-caption">
+											<h5><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>"><?=ucwords($row['model'])?> </a></h5>
+										</div>
+									</div>
+								</div>
+							</div>
 
-							$db->desconectar();
-							?>
+						<?php }
 
+						$db->desconectar();
+						?>
 
 					</div>
 					<a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>

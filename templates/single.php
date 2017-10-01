@@ -5,6 +5,7 @@ if($msj!='')
 echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; color:#000; font-size:14px; text-align:center; width:100%; " >'.$msj.'</div>';
 ?>
 
+<!--- #single ---->
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-8 col-sm-12">
@@ -12,7 +13,7 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
     </div>
     <div class="col-md-8 col-xs-12 col-sm-12">
 
-      <h4><?=ucwords($model)?> <?=ucwords($marc)?></h4>
+      <h4><?=ucwords($model)?></h4>
 
       <?php
       $db->conectar();
@@ -28,12 +29,12 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
       $db->desconectar();
       ?>
 
-      <div class="col-md-8">
+      <div class="col-md-6">
         <a href="<?php echo $imagenes[0]['url']; ?>">
           <img class="img-responsive img-rounded" src="<?php echo $imagenes[0]['url']; ?>">
         </a>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <ul>
           <?php
           for($i=1;$i<count($imagenes);$i++){
@@ -82,7 +83,7 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
           </div>
           <div class="form-group">
             <label for="email">Mensaje</label>
-            <textarea name="message" id="message" cols="75" rows="5"></textarea>
+            <textarea name="message" id="message" cols="65" rows="5"></textarea>
           </div>
           <div class="form-group">
             <input type="hidden" name="url" id="url" value="<?=$_SERVER['SCRIPT_URI'].'?maquinaria='.$id ?>">

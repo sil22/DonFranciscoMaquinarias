@@ -1,6 +1,5 @@
 <!--#sidebar_interior--->
 
-<div class="col-md-12 col-xs-12">
 
 <div id="homeSearch">
 	<h4 class="section-line section-tittle">Buscar Maquinaria</h4>
@@ -248,9 +247,6 @@
 			</div>
 		</form>
 </div>
-</div>
-
-<div class="col-md-12 col-xs-12">
 
 	<h4 class="section-line section-tittle">Últimas Maquinarias</h4>
 
@@ -297,7 +293,6 @@
 		?>
 
 	</ul>
-</div>
 <div class="col-md-12 col-xs-12 browser-cat">
 
 	<h4 class="section-line section-tittle">Buscar por marcas</h4>

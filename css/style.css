@@ -332,7 +332,7 @@ a.advancedSearch{
 
 @media only screen and (max-width:400px) {
 	iframe {
-		width: 190px;
+		width: 300px;
 	}
 }
 
@@ -372,6 +372,11 @@ a.advancedSearch{
 
 .img-ubicacion{
 	border:#CCC 1px solid;
+	margin: 15px 15px 0px 0px;
+}
+
+.li-ubicacion {
+	float: left;
 }
 
 .features{

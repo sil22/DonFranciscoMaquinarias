@@ -8,6 +8,8 @@
           <div class="col-md-12 col-xs-12">
 
     <div class="navbar-header">
+      <div class="col-md-6 col-md-offset-6 col-xs-10 col-xs-offset-2 ">
+
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -15,7 +17,6 @@
         <span class="icon-bar"></span>
       </button>
 
-        <div class="col-md-6 col-md-offset-6 col-xs-12  ">
           <a class="navbar-brand" id="logo" href="http://donfranciscomaquinarias.com/"><img class="img-responsive center-block" src="files/logo0000.png" alt="logo"></a>
 
         </div>
@@ -32,6 +33,6 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
-
+  </div>
   </div><!-- /.container-fluid -->
 </nav>

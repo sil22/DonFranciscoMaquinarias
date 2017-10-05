@@ -5,8 +5,6 @@
 <div id="homeSearch" class="center-block">
 	<form id="homeSearchForm" action="search.php" method="get">
 
-
-
 		<div class="form-input clearfix">
 			<label for="marca">Marca</label>
 			<select name="marca" id="marca">

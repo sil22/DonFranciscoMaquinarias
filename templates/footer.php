@@ -1,7 +1,9 @@
 
 <!-- #footer -->
-<div id="footer" class="container">
+<div id="footer" class="container-fluid">
 	<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-sm-12">
+
 		<div class="col-md-4 col-xs-12 col-sm-2">
 			<h4>Encontranos en</h4>
 			<a href="http://donfranciscomaquinarias.com/ubicacion.php">
@@ -23,14 +25,12 @@
 						</div>
 				</div>
 			</div>
-		</div>
 
 		<!-- end - #footer -->
 
 		<!-- #footer-contact-info -->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12 col-xs-12 contact-info">
+				<div class="col-xs-12 col-md-12 col-sm-12 contact-info">
+
 					<ul>
 						<li class="space">
 							<div>
@@ -80,5 +80,8 @@
 					</div>
 
 				</div>
+			</div>
+
+			</div>
 
 				<!-- end - #footer-bottom -->

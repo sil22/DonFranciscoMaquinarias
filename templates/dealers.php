@@ -1,15 +1,10 @@
 <!-- #car-dealers -->
-<div class="container">
+<div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12 col-md-12 col-sm-12">
+		<div class="col-xs-12 col-md-10 col-md-offset-1 col-sm-12">
 			<h4 class="section-title section-line">Nuestras marcas</h4>
-		</div>
-		</div>
-		</div>
 
-		<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1 col-xs-12" id="carDealers">
+			<div  id="carDealers">
 
 						<a href="search.php?marca=Lecar">
 							<img src="files/1.png" class="dealer-logo">
@@ -45,4 +40,6 @@
 
 						</div>
 					</div>
+				</div>
+			</div>
 <!-- end - #car-dealers -->

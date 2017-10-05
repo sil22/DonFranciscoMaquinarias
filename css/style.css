@@ -9,14 +9,15 @@ body{
 	font-size: 14px ;
 }
 
-p {
-	text-transform: lowercase;
-}
 
 #header {
 	border-top: 5px solid #000000;
 	border-bottom: 1px solid #e4e4e4;
 	background-color: #FFCD00;
+}
+
+.container-fluid{
+	padding: 0px;
 }
 
 .imgFront{
@@ -28,15 +29,12 @@ p {
 	text-transform: uppercase;
 }
 
-.browser-cat h5, .auto-features {
-	color: #ff7777 !important;
-	border-bottom: 1px solid #ff7777;
-}
 
 .browser-cat ul li {
 	border-bottom: 1px dotted #e2e2e2;
 	padding: 3px 4px;
 }
+
 
 select {
 	color: #646464;
@@ -79,9 +77,8 @@ textarea {
 }
 
 .imgFeatured{
-	width: 1000px;
+	width: 500px;
 	height: 230px;
-	margin: 10px 0px 10px 0px;
 	cursor: pointer;
 }
 
@@ -155,8 +152,8 @@ a:hover {
 	padding: 5px;
 }
 
-#featuredCars_tj_container .tj_wrapper ul li{
-	height: 250px;
+#featuredCars{
+	margin-top: 20px;
 }
 
 #featuredCars_tj_container {
@@ -205,24 +202,7 @@ ul {
 }
 
 .featured {
-	background-color: rgba(215, 211, 206, 0.43);
 
-	border-radius: 15px;
-	border: solid 2px rgba(179, 176, 173, 0.63);
-	padding: 5px;
-	-webkit-box-shadow: inset 0 0 5px#bbb;
-	height: 260px !important;
-}
-
-.tj_nav  {
-	float: right;
-	cursor: pointer;
-	margin: 20px 90px 0px 0px;
-
-}
-
-.tj_wrapper {
-	position:relative;
 }
 
 .enlargeImageModalSource {
@@ -260,7 +240,7 @@ a.image-zoom span.zoom-icon {
 	margin-left: 80px;
 }
 
-#homeSearch{
+#homeSearch, .homeSearch{
 	background-color: #f6f6f6;
 	border: 1px solid #e8e8e8;
 	padding: 30px 40px;
@@ -269,6 +249,7 @@ a.image-zoom span.zoom-icon {
 #homeSearch .form-input{
 	margin-bottom: 10px;
 }
+
 label{
 	display: block;
 	font-style: italic;

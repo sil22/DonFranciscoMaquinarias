@@ -16,12 +16,8 @@ body{
 	background-color: #FFCD00;
 }
 
-.container-fluid{
-	padding: 0px;
-}
-
 .imgFront{
-	background-color: #ffe373;
+	background-color: rgba(255, 227, 115, 0.67);
 	margin-top: 0px;
 }
 
@@ -60,13 +56,9 @@ textarea {
 	border-top:4px solid #FFCD00;
 	background-color: rgba(141,141,141,0.2);
 	margin-top: 20px;
-	padding-top: 30px;
+	padding-top: 10px;
 }
 
-#footer{
-	padding-bottom: 30px;
-
-}
 
 .contact-info{
 	color: #dddddd;
@@ -240,14 +232,21 @@ a.image-zoom span.zoom-icon {
 	margin-left: 80px;
 }
 
-#homeSearch, .homeSearch{
+ .homeSearch{
 	background-color: #f6f6f6;
 	border: 1px solid #e8e8e8;
-	padding: 30px 40px;
+	padding: 20px 30px;
+	height: 300px;
+	margin-top: 20px;
+
 }
 
-#homeSearch .form-input{
+.form-input{
 	margin-bottom: 10px;
+}
+
+.browser{
+	padding: 0px 30px 0px 30px;
 }
 
 label{
@@ -264,7 +263,6 @@ label{
 .mas{
 	font-size: 10px;
 	font-weight:bold;
-	width: 150px;
 }
 
 a.advancedSearch{
@@ -317,6 +315,12 @@ a.advancedSearch{
 	}
 }
 
+@media only screen and (max-width:600px) {
+	.iframe-footer {
+		width: 150px;
+	}
+}
+
 .listado-vehiculos{
 	border-bottom: 1px dotted #e2e2e2;
 	margin-top: 15px;
@@ -331,19 +335,6 @@ a.advancedSearch{
 @media only screen and (max-width:400px) {
 	.featured {
 		margin: 0px;
-	}
-}
-
-@media only screen and (max-width:400px) {
-	.imgFeatured {
-		height: 250px;
-	}
-}
-
-@media only screen and (max-width:400px) {
-	#featuredCars{
-		display: none;
-
 	}
 }
 

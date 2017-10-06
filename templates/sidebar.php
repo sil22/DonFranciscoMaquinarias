@@ -1,5 +1,6 @@
 <!-- #search -->
 
+
 <h4 class="section-title section-line">Busqueda</h4>
 
 <div id="homeSearch" class="center-block">
@@ -236,4 +237,5 @@
 
 	</form>
 </div>
+
 <!-- end - #search -->

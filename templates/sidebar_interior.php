@@ -248,24 +248,24 @@
 		</form>
 </div>
 
+<div class="homeSearch">
+
+<?php
+require_once('admin/clase_DB.php');
+
+$db = new DB();
+
+$db->conectar();
+
+$resultados =  $db->consulta('SELECT * FROM vehiculos,imagenes
+	WHERE vehiculos.id  = imagenes.id_vehiculo AND imagenes.portada = "si"
+	 ORDER BY vehiculos.fecha DESC LIMIT 5 ');
+
+while($row=mysql_fetch_array($resultados)){
+
+	?>
 	<h4 class="section-line section-tittle">Últimas Maquinarias</h4>
-
 	<ul>
-
-		<?php
-		require_once('admin/clase_DB.php');
-
-		$db = new DB();
-
-		$db->conectar();
-
-		$resultados =  $db->consulta('SELECT * FROM vehiculos,imagenes
-			WHERE vehiculos.id  = imagenes.id_vehiculo AND imagenes.portada = "si"
-			 ORDER BY vehiculos.fecha DESC LIMIT 5 ');
-
-		while($row=mysql_fetch_array($resultados)){
-
-			?>
 			<div class="col-md-12 col-xs-12 listado-vehiculos">
 
 			<li>
@@ -293,7 +293,9 @@
 		?>
 
 	</ul>
-<div class="col-md-12 col-xs-12 browser-cat">
+	</div>
+
+<div class="col-md-12 col-xs-12 browser-cat homeSearch">
 
 	<h4 class="section-line section-tittle">Buscar por marcas</h4>
 
@@ -306,6 +308,10 @@
 		<li class="browser-li"><a href="search.php?marca=Pauny">Pauny</a></li>
 		<li class="browser-li"><a href="search.php">Otras</a></li>
 	</div>
+</ul>
+
+	<ul>
+
 	<div class="col-md-6 browser-col">
 		<li class="browser-li"><a href="search.php?marca=Baima">Baima</a></li>
 		<li class="browser-li"><a href="search.php?marca=Praba">Praba</a></li>

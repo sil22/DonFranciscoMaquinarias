@@ -4,17 +4,17 @@
 	<div class="row">
 			<div class="col-xs-12 col-md-10 col-md-offset-1 col-sm-12">
 
-		<div class="col-md-4 col-xs-12 col-sm-2">
+		<div class="col-md-4 col-xs-6 col-sm-2">
 			<h4>Encontranos en</h4>
 			<a href="http://donfranciscomaquinarias.com/ubicacion.php">
 				<figure>
-					<img src="files/ubicacion.png" class="img-responsive"/>
+					<iframe width="300" height="200" class="iframe-footer" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=-38.532221,-58.769871&amp;num=1&amp;ie=UTF8&amp;t=h&amp;ll=-38.532187,-58.770504&amp;spn=0.030214,0.051413&amp;z=14&amp;output=embed"></iframe>
 				</figure>
 			</a>
 		</div>
-		<div class="col-md-4 col-xs-12 col-sm-6">
+		<div class="col-md-4 col-xs-6 col-sm-6">
 			<h4>Buscanos en</h4>
-				<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FDon-Francisco-Maquinarias%2F160607427288244&amp;width=300&amp;height=200&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=false&amp;appId=185172994932129" scrolling="no" frameborder="0" class="embed-responsive-item" allowTransparency="true"></iframe>
+				<iframe class="iframe-footer" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FDon-Francisco-Maquinarias%2F160607427288244&amp;width=300&amp;height=200&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=false&amp;appId=185172994932129" scrolling="no" frameborder="0" class="embed-responsive-item" allowTransparency="true"></iframe>
 			</div>
 			<div class="col-md-4 col-xs-12 col-sm-4">
 					<h4>Don Francisco</h4>

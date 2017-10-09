@@ -345,6 +345,11 @@ a.advancedSearch{
 .img-ubicacion{
 	border:#CCC 1px solid;
 	margin: 15px 15px 0px 0px;
+	width: 390px;
+}
+
+ul>li>figcaption>h6{
+font-size: 16px;
 }
 
 .li-ubicacion {

@@ -20,10 +20,6 @@
 
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 col-xs-12 col-sm-12">
-
 
 <header>
 	<?php include('templates/navigation.php'); ?>
@@ -36,9 +32,7 @@
 <footer class="footer">
 	<?php include('templates/footer.php'); ?>
 </footer>
-</div>
-</div>
-</div>
+
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/master.js"></script>

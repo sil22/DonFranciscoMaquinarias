@@ -1,9 +1,12 @@
 <!--#empresa-->
+<div class="container-fluid">
+
+
 	<div class="row">
 		<div class="col-xs-12  col-md-10 col-md-offset-1 col-sm-12">
 			<h4 class="section-line section-tittle">Nosotros</h4>
 		</div>
-		<div class="col-xs-12 col-md-6 col-md-offset-1 col-sm-12">
+		<div class="col-xs-12 col-md-7 col-md-offset-1 col-sm-12">
 			<!-- #content -->
 			<h4>Carina y Los Fierros del Campo</h4>
 			<div class="foto-flia">
@@ -53,11 +56,11 @@
 				</ul>
 			</div>
 		</div>
-		<div class="col-md-4 col-xs-12 col-sm-12">
+		<div class="col-md-3 col-xs-12 col-sm-12">
 
 			<?php include('templates/sidebar_interior.php'); ?>
 		</div>
 	</div>
 
-
+</div>
 <!-- end - #content -->

@@ -9,17 +9,12 @@ body{
 	font-size: 14px ;
 }
 
-
 #header {
 	border-top: 5px solid #000000;
 	border-bottom: 1px solid #e4e4e4;
 	background-color: #FFCD00;
 }
 
-.imgFront{
-	background-color: rgba(255, 227, 115, 0.67);
-	margin-top: 0px;
-}
 
 .browser-cat {
 	text-transform: uppercase;
@@ -115,6 +110,9 @@ textarea {
 	border: 0px;
 }
 
+.alto{
+	height: 435px;
+}
 
 .section-line {
 	border-bottom: 1px solid #e1e1e1;
@@ -236,7 +234,6 @@ a.image-zoom span.zoom-icon {
 	background-color: #f6f6f6;
 	border: 1px solid #e8e8e8;
 	padding: 20px 30px;
-	height: 300px;
 	margin-top: 20px;
 
 }
@@ -361,15 +358,18 @@ font-size: 16px;
 }
 
 .num-navegacion{
-	border-bottom: 3px solid #c8c8ae;
 	text-align: center;
 	background-color: rgba(215, 211, 206, 0.43);
 }
 
-.num-navegacion li {
-	display: inline-flex;
-padding: 10px 20px 0px 20px;
-margin: 0px;
+.pagination>li>a {
+	color: black;
+	font-weight: bold;
+}
+
+.pagination>.active>a, .pagination>.active>a:hover {
+	background-color: #FFCD00;
+	border-color: #FFCD00;
 }
 
 span{
@@ -398,8 +398,12 @@ span{
 }
 
 .img-carousel{
-	width: 300px;
+	width: 350px;
 	height: 200px;
+	padding-left: 40px;
+}
+.carousel-control{
+	width: 100px;
 }
 
 .carousel-caption>h5>a {
@@ -411,4 +415,8 @@ span{
 }
 .carousel-caption{
 	padding: 0px;
+}
+
+.card{
+	margin-bottom: 20px;
 }

@@ -56,7 +56,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="col-md-3 col-xs-12 col-sm-12">
+		<div class="col-md-3  col-sm-12">
 
 			<?php include('templates/sidebar_interior.php'); ?>
 		</div>

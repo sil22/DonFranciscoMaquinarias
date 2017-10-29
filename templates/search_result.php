@@ -98,12 +98,12 @@ $resultados =  $db->consulta($sql);
 					?>
 
 					<div class="col-md-12 col-xs-12 col-sm-12">
-						<div class="col-md-6 col-xs-12">
+						<div class="col-md-6 col-xs-12 card">
 							<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"  target="_blank">
 								<img src="<?=$row['min_url']?>" class="attachment-main img-responsive imgFeatured img-rounded" alt="default-thumb" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" />
 							</a>
 						</div>
-						<div class="col-md-6 col-xs-12">
+						<div class="col-md-6 col-xs-12 ">
 							<h4 class="section-title title"><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h4>
 							<div class="col-md-8 col-xs-10">
 								<ul>
@@ -114,7 +114,7 @@ $resultados =  $db->consulta($sql);
 								</ul>
 							</div>
 							<div class="col-md-4 col-xs-12">
-									<span>Precio $ <?=ucwords($row['price'])?></span>
+								<span>Precio $ <?=ucwords($row['price'])?></span>
 								<button type="button" class="btn btn-default detalles" name="button">
 									<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" target="_blank">Ver detalles</a>
 								</button>
@@ -125,34 +125,31 @@ $resultados =  $db->consulta($sql);
 				<?php } }  ?>
 
 				<!-- begin - .pagination -->
-
 				<div class="col-md-12 col-xs-12 num-navegacion">
-					<?php if ($cantidad > 10){?>
-						<ul>
-							<li class="pager">Páginas</li>
+						<ul class="pagination">
 							<?php
 							$page = 0;
 							for($i=1; $i+10 < $cantidad; $i=$i+10) {
 								$page++;
 								$url = 'search.php?marca='.$marca.'&modelo='.$modelo.'&anio='.$year.'&nuevo='.$estado.'&rubro='.$rubro.'&page='.$page.'&auto_search=true&searchAutosBoxButton=Buscar';
 								?>
-								<li <?php if($actual == $page) echo 'class="current"'; ?> >
-									<a href="<?=$url?>"class="pager"><?=$page?></a>
-								</li>
-								<?php
-							}
-							?>
-						</ul>
-					<?php } ?>
-
-				</div>
-
-				<!-- end - .pagination -->
-
-			</div><!-- end - .search-results -->
-
-			<div class="col-md-4 col-xs-12 col-sm-12">
-				<?php include('templates/sidebar_interior.php'); ?>
+								<li <?php if($actual == $page) echo 'class="page-item active"'; else {
+									echo 'class="page-item"';
+								} ?> >
+								<a href="<?=$url?>" class="page-link"><?=$page?></a>
+							</li>
+							<?php
+						}
+						?>
+					</ul>
 			</div>
+
+			<!-- end - .pagination -->
+
+		</div><!-- end - .search-results -->
+
+		<div class="col-md-4 col-xs-12 col-sm-12">
+			<?php include('templates/sidebar_interior.php'); ?>
 		</div>
 	</div>
+</div>

@@ -1,7 +1,7 @@
 <!--#sidebar_interior--->
 
 
-<div id="homeSearch">
+<div id="homeSearch" class="homeSearch">
 	<h4 class="section-line section-tittle">Buscar Maquinaria</h4>
 
 		<form id="searchAutosBox48724494362" action="" method="get">
@@ -248,7 +248,9 @@
 		</form>
 </div>
 
-<div class="homeSearch">
+<div class="homeSearch alto">
+	<h4 class="section-line section-tittle">Últimas Maquinarias</h4>
+	<ul>
 
 <?php
 require_once('admin/clase_DB.php');
@@ -264,10 +266,8 @@ $resultados =  $db->consulta('SELECT * FROM vehiculos,imagenes
 while($row=mysql_fetch_array($resultados)){
 
 	?>
-	<h4 class="section-line section-tittle">Últimas Maquinarias</h4>
-	<ul>
-			<div class="col-md-12 col-xs-12 listado-vehiculos">
 
+			<div class="col-md-12 col-xs-12 listado-vehiculos">
 			<li>
 				<div class=col-md-4>
 				<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" class="opac" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">
@@ -300,7 +300,7 @@ while($row=mysql_fetch_array($resultados)){
 	<h4 class="section-line section-tittle">Buscar por marcas</h4>
 
 	<ul>
-		<div class="col-md-6 browser-col">
+		<div class="col-md-6 col-xs-6  browser-col">
 		<li class="browser-li"><a href="search.php?marca=Lecar">Lecar</a></li>
 		<li class="browser-li"><a href="search.php?marca=Bertini">Bertini</a></li>
 		<li class="browser-li"><a href="search.php?marca=Pozzi">Pozzi</a></li>
@@ -311,8 +311,7 @@ while($row=mysql_fetch_array($resultados)){
 </ul>
 
 	<ul>
-
-	<div class="col-md-6 browser-col">
+	<div class="col-md-6 col-xs-6 browser-col">
 		<li class="browser-li"><a href="search.php?marca=Baima">Baima</a></li>
 		<li class="browser-li"><a href="search.php?marca=Praba">Praba</a></li>
 		<li class="browser-li"><a href="search.php?marca=Cestari">Cestari</a></li>

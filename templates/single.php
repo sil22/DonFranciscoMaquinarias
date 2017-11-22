@@ -6,12 +6,12 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
 ?>
 
 <!--- #single ---->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-xs-12 col-md-8 col-sm-12">
+    <div class="col-md-10 col-md-offset-1 col-xs-12 col-sm-12">
       <h4 class="section-line section-tittle">Detalles</h4>
     </div>
-    <div class="col-md-8 col-xs-12 col-sm-12">
+    <div class="col-md-7 col-md-offset-1 col-xs-12 col-sm-12">
 
       <h4><?=ucwords($model)?></h4>
 
@@ -120,7 +120,7 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
       <!-- end - auto features -->
     </div>
 
-    <div class="col-md-4 col-xs-12 col-sm-12">
+    <div class="col-md-3 col-xs-12 col-sm-12">
       <?php include('templates/sidebar_interior.php'); ?>
     </div>
   </div>

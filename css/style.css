@@ -157,7 +157,7 @@ textarea {
 }
 
 .line {
-	border-bottom: 1px solid rgba(68, 65, 65, 0.5);
+	border-bottom: 1px solid rgba(68, 65, 65, 0.34);
 	margin-bottom: 25px;
 }
 
@@ -170,8 +170,8 @@ a:hover {
 	color: rgb(244, 209, 26);
 }
 
-.title:hover{
-	color: #444444;
+.title>a:hover{
+	color: rgba(68, 68, 68, 0.67);
 }
 .contact{
 	color: #dddddd;
@@ -206,9 +206,12 @@ a:hover {
 	background-color: #FFCD00;
 	border-radius: 10px;
 	padding: 10px;
-	color: white;
 	font-weight: bold;
+}
 
+.maq-info, .maq-info-2{
+	margin-top: 15px;
+	padding: 0px !important;
 }
 
 .descrip{
@@ -398,6 +401,10 @@ span{
 	font-size: 10px;
 	font-weight:bold;
 	margin-top: 35px;
+}
+
+.detalles>a:hover{
+	color: black;
 }
 
 @media only screen and (min-width: 992px) {

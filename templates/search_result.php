@@ -66,18 +66,18 @@ ORDER BY vehiculos.fecha DESC LIMIT '.$page.',10';
 $resultados =  $db->consulta($sql);
 
 ?>
-<div class="container">
+<div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12 col-xs-12">
-			<h3 class="section-line section-tittle">
+		<div class="col-md-10 col-md-offset-1 col-xs-12 col-sm-12">
+			<h4 class="section-line section-tittle">
 				<?php
 				if($title == '') echo 'Nuevos y Usados';
 				else echo $title;
 				?>
-			</h3>
+			</h4>
 		</div>
 
-		<div class="col-md-8 col-xs-12">
+		<div class="col-md-7 col-md-offset-1 col-xs-12 col-sm-12 maq-info">
 			<?php
 
 			if($cantidad < 1){
@@ -97,13 +97,13 @@ $resultados =  $db->consulta($sql);
 				while($row=mysql_fetch_array($resultados)){
 					?>
 
-					<div class="col-md-12 col-xs-12 col-sm-12">
+					<div class="col-md-12 col-xs-12 col-sm-12 maq-info-2">
 						<div class="col-md-6 col-xs-12 card">
 							<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"  target="_blank">
 								<img src="<?=$row['min_url']?>" class="attachment-main img-responsive imgFeatured img-rounded" alt="default-thumb" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" />
 							</a>
 						</div>
-						<div class="col-md-6 col-xs-12 ">
+						<div class="col-md-6 col-xs-12">
 							<h4 class="section-title title"><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h4>
 							<div class="col-md-8 col-xs-10">
 								<ul>
@@ -143,12 +143,9 @@ $resultados =  $db->consulta($sql);
 						?>
 					</ul>
 			</div>
-
 			<!-- end - .pagination -->
-
 		</div><!-- end - .search-results -->
-
-		<div class="col-md-4 col-xs-12 col-sm-12">
+		<div class="col-md-3 col-xs-12 col-sm-12">
 			<?php include('templates/sidebar_interior.php'); ?>
 		</div>
 	</div>

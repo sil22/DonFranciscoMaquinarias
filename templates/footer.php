@@ -4,7 +4,7 @@
 	<div class="row">
 			<div class="col-xs-12 col-md-10 col-md-offset-1 col-sm-12">
 
-		<div class="col-md-4 col-xs-6 col-sm-2">
+		<div class="col-md-4 col-xs-6 col-sm-4">
 			<h4 class="upper line">Encontranos en</h4>
 			<a href="ubicacion.php">
 				<figure>
@@ -12,7 +12,7 @@
 				</figure>
 			</a>
 		</div>
-		<div class="col-md-4 col-xs-6 col-sm-6">
+		<div class="col-md-4 col-xs-6 col-sm-4">
 			<h4 class="upper line">Buscanos en</h4>
 				<iframe class="iframe-footer" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FDon-Francisco-Maquinarias%2F160607427288244&amp;width=300&amp;height=200&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=false&amp;appId=185172994932129" scrolling="no" frameborder="0" class="embed-responsive-item" allowTransparency="true"></iframe>
 			</div>

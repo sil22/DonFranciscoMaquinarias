@@ -21,27 +21,21 @@
 </head>
 
 <body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 col-xs-12 col-sm-12">
-
-<header>
-	<?php include('templates/navigation.php'); ?>
-</header>
+	<header>
+		<?php include('templates/navigation.php'); ?>
+	</header>
+	
 	<section>
 		<?php include('templates/contacto.php'); ?>
 		<article>
-		<?php include('templates/latest.php'); ?>
+			<?php include('templates/latest.php'); ?>
 		</article>
-
 	</section>
-	<footer class="footer">
-	<?php include('templates/footer.php'); ?>
-</footer>
 
-	</div>
-	</div>
-	</div>
+	<footer class="footer">
+		<?php include('templates/footer.php'); ?>
+	</footer>
+
 
 	<script src="js/jquery-3.2.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>

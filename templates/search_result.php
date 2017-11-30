@@ -68,7 +68,7 @@ $resultados =  $db->consulta($sql);
 ?>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-10 col-md-offset-1 col-xs-12 col-sm-12">
+		<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-sm-12 title-search">
 			<h4 class="section-line section-tittle">
 				<?php
 				if($title == '') echo 'Nuevos y Usados';
@@ -77,47 +77,47 @@ $resultados =  $db->consulta($sql);
 			</h4>
 		</div>
 
-		<div class="col-md-7 col-md-offset-1 col-xs-12 col-sm-12 maq-info">
+		<div class="col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1 col-sm-6 maq-info">
 			<?php
-
 			if($cantidad < 1){
-
 				echo '<h3>LA BÚSQUEDA NO PRODUJO RESULTADOS.</h3>';
-
 				echo '<br /><h3>INTENTE CON ALGUNO DE ESTOS ITEMS</h3>';
-
-
 				include('templates/container.php');
-
-
 			}
 			else
 			{
-
 				while($row=mysql_fetch_array($resultados)){
 					?>
-
-					<div class="col-md-12 col-xs-12 col-sm-12 maq-info-2">
-						<div class="col-md-6 col-xs-12 card">
-							<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"  target="_blank">
-								<img src="<?=$row['min_url']?>" class="attachment-main img-responsive imgFeatured img-rounded" alt="default-thumb" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" />
-							</a>
-						</div>
-						<div class="col-md-6 col-xs-12">
-							<h4 class="section-title title"><a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></a></h4>
-							<div class="col-md-8 col-xs-10">
-								<ul>
-									<li class="features">Marca : <?=ucwords($row['marc'])?></li>
-									<li class="features">Modelo : <?=ucwords($row['model'])?></li>
-									<li class="features">Estado : <?=ucwords($row['used'])?> </li>
-									<li class="features">Año: <?=ucwords($row['year'])?> </li>
-								</ul>
+					<div class="col-md-10 col-md-offset-1 col-xs-12 col-sm-12 maq-info-2">
+						<div class="panel panel-default">
+							<div class="col-md-6 col-xs-6 card">
+								<!-- <a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"  target="_blank"> -->
+								<img src="<?=$row['min_url']?>" class=" img-responsive imgFeatured img-thumbnail" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" />
+								<!-- </a> -->
 							</div>
-							<div class="col-md-4 col-xs-12">
-								<span>Precio $ <?=ucwords($row['price'])?></span>
-								<button type="button" class="btn btn-default detalles" name="button">
-									<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" target="_blank">Ver detalles</a>
-								</button>
+							<div class="panel-body item-panel">
+								<div class="col-md-6 col-xs-6">
+									<h4 class="panel-title section-title"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></h4>
+									<div class="col-md-12 col-sm-12	 col-xs-10">
+										<ul>
+											<li class="features">Marca : <?=ucwords($row['marc'])?></li>
+											<li class="features">Modelo : <?=ucwords($row['model'])?></li>
+											<li class="features">Estado : <?=ucwords($row['used'])?> </li>
+											<li class="features">Año: <?=ucwords($row['year'])?> </li>
+											<li class="list-span col-md-6 col-sm-6 col-xs-12"><span>Precio $ <?=ucwords($row['price'])?></span></li>
+											<li class="list-span col-md-6 col-sm-6 col-xs-12"><button type="button" class="btn btn-default detalles" name="button">
+													<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" target="_blank">MAS INFORMACIÓN</a>
+												</button>
+											</li>
+										</ul>
+									</div>
+									<!-- <div class="col-md-4 col-xs-12">
+										<span>Precio $ <?=ucwords($row['price'])?></span>
+										<button type="button" class="btn btn-default detalles" name="button">
+											<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" target="_blank">MAS INFORMACION</a>
+										</button>
+									</div> -->
+								</div>
 							</div>
 						</div>
 					</div>
@@ -126,26 +126,26 @@ $resultados =  $db->consulta($sql);
 
 				<!-- begin - .pagination -->
 				<div class="col-md-12 col-xs-12 num-navegacion">
-						<ul class="pagination">
-							<?php
-							$page = 0;
-							for($i=1; $i+10 < $cantidad; $i=$i+10) {
-								$page++;
-								$url = 'search.php?marca='.$marca.'&modelo='.$modelo.'&anio='.$year.'&nuevo='.$estado.'&rubro='.$rubro.'&page='.$page.'&auto_search=true&searchAutosBoxButton=Buscar';
-								?>
-								<li <?php if($actual == $page) echo 'class="page-item active"'; else {
-									echo 'class="page-item"';
-								} ?> >
-								<a href="<?=$url?>" class="page-link"><?=$page?></a>
-							</li>
-							<?php
-						}
-						?>
-					</ul>
+					<ul class="pagination">
+						<?php
+						$page = 0;
+						for($i=1; $i+10 < $cantidad; $i=$i+10) {
+							$page++;
+							$url = 'search.php?marca='.$marca.'&modelo='.$modelo.'&anio='.$year.'&nuevo='.$estado.'&rubro='.$rubro.'&page='.$page.'&auto_search=true&searchAutosBoxButton=Buscar';
+							?>
+							<li <?php if($actual == $page) echo 'class="page-item active"'; else {
+								echo 'class="page-item"';
+							} ?> >
+							<a href="<?=$url?>" class="page-link"><?=$page?></a>
+						</li>
+						<?php
+					}
+					?>
+				</ul>
 			</div>
 			<!-- end - .pagination -->
 		</div><!-- end - .search-results -->
-		<div class="col-md-3 col-xs-12 col-sm-12">
+		<div class="col-md-3 col-md-offset-0  col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 ">
 			<?php include('templates/sidebar_interior.php'); ?>
 		</div>
 	</div>

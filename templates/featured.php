@@ -50,12 +50,18 @@
                     <div class="panel-body">
                       <h4 class="panel-title"><?=substr($row['model'],0,19);?></h4>
                       <div class="hidden-xs">
-
-                      <h5 class="descrip">Descripción:</h5>
-                      <p >
-                        <?=substr($row['note'], 0, 100);?> [...]
-                      </p>
-
+                        <? $count = str_word_count($row['note']);
+                        if($count >= 11){
+                          ?>
+                          <p> <?=substr($row['note'], 0, 60);?>[..] </p>
+                          <?
+                        }
+                        else{
+                          ?>
+                         <p> <?=$row['note']; ?> </p>
+                          <?
+                        }
+                        ?>
                     </div>
                       <a href="item.php?maquinaria=<?=$row['id_vehiculo']?>">
                         <button type="button" class="btn btn-default mas" name="button">Más información</button>

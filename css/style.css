@@ -15,7 +15,7 @@ body{
 	background-color: #FFCD00;
 }
 
-.browser-cat {
+.browser-cat, .panel-title {
 	text-transform: uppercase;
 }
 
@@ -101,6 +101,7 @@ textarea {
 	height: 230px;
 	cursor: pointer;
 }
+
 .imgFeatured:hover{
 	transform: scale(1.1);
 	opacity: 0.8;
@@ -184,7 +185,6 @@ a:hover {
 
 .text-right{
 	text-align: right;
-
 }
 
 .space {
@@ -214,7 +214,7 @@ a:hover {
 }
 
 .maq-info, .maq-info-2{
-	margin-top: 15px;
+	margin-top: 10px;
 	padding: 0px !important;
 }
 
@@ -371,6 +371,7 @@ font-size: 16px;
 
 .features{
 	border-bottom: 1px dotted #e2e2e2;
+	padding: 5px 0px 5px 0px;
 }
 
 .num-navegacion{
@@ -404,11 +405,16 @@ span{
 .detalles {
 	font-size: 10px;
 	font-weight:bold;
-	margin-top: 35px;
 }
 
 .detalles>a:hover{
 	color: black;
+}
+
+@media (max-width: 768px) {
+	.list-span{
+		width: 50px;
+	}
 }
 
 @media only screen and (min-width: 992px) {
@@ -438,7 +444,20 @@ span{
 }
 
 .card{
-	margin-bottom: 20px;
+	padding: 0px;
+}
+
+.panel-title{
+	padding: 15px 0px 10px 13px;
+}
+
+.list-span{
+	margin-top: 15px;
+	padding: 0px;
+}
+
+.item-panel {
+	padding: 0px;
 }
 
 .vendor-info{

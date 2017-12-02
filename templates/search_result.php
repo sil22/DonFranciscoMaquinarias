@@ -98,7 +98,7 @@ $resultados =  $db->consulta($sql);
 							<div class="panel-body item-panel">
 								<div class="col-md-6 col-xs-6">
 									<h4 class="panel-title section-title"><?=ucwords($row['model'])?> <?=ucwords($row['marc'])?></h4>
-									<div class="col-md-12 col-sm-12	 col-xs-10">
+									<div class="col-md-12 col-sm-12	col-xs-12">
 										<ul>
 											<li class="features">Marca : <?=ucwords($row['marc'])?></li>
 											<li class="features">Modelo : <?=ucwords($row['model'])?></li>

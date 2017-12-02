@@ -195,16 +195,34 @@ a:hover {
 	margin-top: 20px;
 }
 
-#featuredCars_tj_container {
-	margin: 20px 0px 0px 0px;
-	/*sacarlos cuando determine las col de lo que le sigue a featured cars*/
-	height: 240px;
-
+@media (max-width:500px ) {
+	.panel-default{
+		width: 170px;
+	}
+ 	.panel-body{
+		padding: 5px;
+	}
+	.panel-title{
+		padding: 4px !important;
+	}
+	.mas{
+		margin-left: 10px;
+	}
 }
 
-#featuredCars h5  {
-	font-family: Arial, serif, sans-serif;
+.card{
+	padding: 0px;
 }
+
+.panel-title{
+	padding: 15px 0px 10px 13px;
+}
+
+
+.item-panel {
+	padding: 0px;
+}
+
 
 .title {
 	background-color: #FFCD00;
@@ -482,19 +500,6 @@ span{
 	color: #ffe373;
 }
 .carousel-caption{
-	padding: 0px;
-}
-
-.card{
-	padding: 0px;
-}
-
-.panel-title{
-	padding: 15px 0px 10px 13px;
-}
-
-
-.item-panel {
 	padding: 0px;
 }
 

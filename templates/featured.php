@@ -43,7 +43,7 @@
 
               ?>
                 <li>
-                  <div class="col-xs-6 col-md-4">
+                  <div class="col-xs-6 col-md-4 col-sm-4">
 
                   <div class="panel panel-default">
                     <img src="<?=$row['min_url']?>" class="img-responsive imgFeatured img-thumbnail" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>">

@@ -50,16 +50,16 @@
                     <div class="panel-body">
                       <h4 class="panel-title"><?=substr($row['model'],0,19);?></h4>
                       <div class="hidden-xs">
-                        <? $count = str_word_count($row['note']);
+                        <?php $count = str_word_count($row['note']);
                         if($count >= 11){
                           ?>
                           <p> <?=substr($row['note'], 0, 60);?>[..] </p>
-                          <?
+                          <?php
                         }
                         else{
                           ?>
                          <p> <?=$row['note']; ?> </p>
-                          <?
+                          <?php
                         }
                         ?>
                     </div>

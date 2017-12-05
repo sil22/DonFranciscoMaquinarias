@@ -1,4 +1,4 @@
-<?
+<?php 
 
 $msj='';
 extract($_REQUEST);

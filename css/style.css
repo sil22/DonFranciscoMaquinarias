@@ -119,19 +119,43 @@ textarea {
 	cursor: pointer;
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
 	#logo {
 		margin: auto;
 		width: auto;
 		height: auto;
+		margin-bottom: 20px;
 	}
 }
+
 
 .nav.navbar-nav.navbar-right{
 	margin: 50px 200px 50px 0px;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
+}
+
+
+@media (max-width: 768px){
+	.nav.navbar-nav.navbar-right{
+		margin: 0px 0px 0px 0px;
+	}
+}
+
+@media (min-width: 1024px){
+	.nav.navbar-nav.navbar-right{
+		margin: 40px 0px 0px 0px;
+	}
+	#logo{
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 1024px) and (min-width:768px){
+	.nav.navbar-nav.navbar-right{
+		margin: 40px 0px 0px 0px;
+	}
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -195,10 +219,22 @@ a:hover {
 	margin-top: 20px;
 }
 
-@media (max-width:500px ) {
+@media (max-width:375px ) {
 	.panel-default{
-		width: 170px;
+		width: 130px;
 	}
+	.panel-title{
+		font-size: 12px;
+	}
+	.mas{
+		font-size: 8px !important;
+	}
+}
+
+@media (max-width:500px ) {
+	/*.panel-default{
+		width: 170px;
+	}*/
  	.panel-body{
 		padding: 5px;
 	}
@@ -212,12 +248,12 @@ a:hover {
 
 .card{
 	padding: 0px;
+	overflow: hidden;
 }
 
 .panel-title{
-	padding: 15px 0px 10px 13px;
+	padding: 5px 0px 5px 13px;
 }
-
 
 .item-panel {
 	padding: 0px;
@@ -484,12 +520,20 @@ span{
 }
 
 .img-carousel{
-	width: 350px;
+	width: 100%;
 	height: 200px;
-	padding-left: 40px;
+	overflow: hidden;
 }
+
+@media (max-width: 550px) {
+	.img-carousel{
+		height: 150px;
+		width: auto;
+	}
+}
+
 .carousel-control{
-	width: 100px;
+	width: 80px;
 }
 
 .carousel-caption>h5>a {

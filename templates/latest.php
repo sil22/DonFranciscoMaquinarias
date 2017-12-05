@@ -16,7 +16,7 @@ $resultados =  $db->consulta('SELECT
 	vehiculos.used = "usado"
 	ORDER BY
 	vehiculos.destacado ASC,vehiculos.fecha DESC
-	LIMIT 6
+	LIMIT 8
 	');
 
 	$imagenes = '';
@@ -43,13 +43,13 @@ $resultados =  $db->consulta('SELECT
 					<div class="carousel slide " id="theCarousel" data-intervar="false">
 						<div class="carousel-inner">
 							<?php
-							for ($i=0;$i<6;$i+=3)	{?>
+							for ($i=0;$i<8;$i+=4)	{?>
 								<div class="item <?php if ($i == 0) echo 'active'; ?>">
 									<div class="row">
 										<?php
-										for ($j = $i; $j < $i+3; $j++) {
+										for ($j = $i; $j < $i+4; $j++) {
 											?>
-											<div class="col-xs-4">
+											<div class="col-xs-3">
 												<img src="<?php echo $imagenes[$j]['url'];?>" class="img-responsive img-carousel" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" target="_blank">
 												<div class="carousel-caption">
 													<h5><a href="item.php?maquinaria=<?php echo $imagenes[$j]['id_vehiculo']?>"><?php echo $imagenes[$j]['model']?> </a></h5>

@@ -1,4 +1,4 @@
-<?
+<?php
 $msj='';
 extract($_REQUEST);
 if($msj!='')
@@ -17,7 +17,15 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
 
       <?php
       $db->conectar();
-      $resultados =  $db->consulta('SELECT * FROM imagenes WHERE id_vehiculo='.$id.' ORDER BY portada DESC');
+      $resultados =  $db->consulta('SELECT
+        *
+        FROM
+        imagenes
+        WHERE
+        id_vehiculo='.$id.'
+        ORDER BY
+        portada DESC
+        ');
       $imagenes = '';
       $i = 0;
       while ($imagen=mysql_fetch_array($resultados)){
@@ -30,7 +38,7 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
       ?>
 
       <div class="col-md-6">
-        <a href="<?php echo $imagenes[0]['url']; ?>">
+        <a href="<?php echo $imagenes[0]['url']; ?>" data-toggle="modal" data-target="#enlargeImageModal">
           <img class="img-responsive img-rounded" src="<?php echo $imagenes[0]['url']; ?>">
         </a>
       </div>
@@ -40,7 +48,7 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
           for($i=1;$i<count($imagenes);$i++){
             ?>
             <li class="single">
-              <a href="<?php echo $imagenes[$i]['url']; ?>">
+              <a href="<?php echo $imagenes[$i]['url']; ?>" data-toggle="modal" data-target="#enlargeImageModal">
                 <img src="<?php echo $imagenes[$i]['min_url']; ?>" class="img-responsive img-rounded img-mini">
               </a>
             </li>
@@ -83,7 +91,7 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
           </div>
           <div class="form-group">
             <label for="email">Mensaje</label>
-            <textarea name="message" id="message" cols="65" rows="5"></textarea>
+            <textarea name="message" id="message" cols="40" rows="5"></textarea>
           </div>
           <div class="form-group">
             <input type="hidden" name="url" id="url" value="<?=$_SERVER['SCRIPT_URI'].'?maquinaria='.$id ?>">
@@ -122,6 +130,83 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
 
     <div class="col-md-3 col-xs-12 col-sm-12">
       <?php include('templates/sidebar_interior.php'); ?>
+    </div>
+  </div>
+
+  <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="modal-content center-block">
+            <div class="modal-header">
+              <div class="col-md-8">
+                <h4><?=ucwords($model)?></h4>
+              </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+
+                    <?php
+                    $db->conectar();
+                    $resultados =  $db->consulta('SELECT
+                       *
+                       FROM
+                       imagenes
+                       WHERE
+                       id_vehiculo='.$id.'
+                       ORDER BY
+                       portada DESC
+                       ');
+                    $imagenes = '';
+                    $i = 0;
+                    while ($imagen=mysql_fetch_array($resultados)){
+                      $imagenes[$i]['min_url'] = $imagen['min_url'];
+                      $imagenes[$i]['url'] = $imagen['url'];
+                      $imagenes[$i]['portada']=$imagen['portada'];
+                      $i++;
+                    }
+                    $db->desconectar();
+                    ?>
+
+                    <!-- Wrapper for slides -->
+                    <?php
+                    for ($i = 0; $i < count($imagenes); $i += 1)	{
+                      ?>
+                        <div class="item <?php if ($i == 0) echo 'active'; ?>">
+                          <div class="row">
+        										<?php
+        										for ($j = $i; $j < $i+1; $j++) {
+        											?>
+                              <div class="col-xs-12">
+        												<img src="<?php echo $imagenes[$j]['url'];?>" class="img-responsive">
+                              </div>
+        										<?php 	} ?>
+                        </div>
+                      </div>
+
+                      <?php 	} ?>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div><!-- end - .post -->

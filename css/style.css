@@ -59,6 +59,7 @@ textarea {
 	text-align: center;
 	padding: 15px;
 	font-size: 13px;
+	margin-top: 10px;
 }
 
 .contact-info ul li, .footer-bottom ul li, .single{
@@ -85,11 +86,22 @@ textarea {
 	text-align: right;
 }
 
-@media only screen and (max-width:600px) {
+@media (max-width:630px) and (min-width:450px) {
+	.iframe-footer {
+		width: 200px;
+	}
+}
+
+@media (max-width:451px) {
 	.iframe-footer {
 		width: 150px;
 	}
 }
+
+a:focus, a:hover{
+	color: #dddddd;
+}
+
 
 .textwidget{
 	font-size: 13px;
@@ -99,7 +111,6 @@ textarea {
 .imgFeatured{
 	width: 500px;
 	height: 230px;
-	cursor: pointer;
 }
 
 .imgFeatured:hover{
@@ -130,7 +141,6 @@ textarea {
 
 
 .nav.navbar-nav.navbar-right{
-	margin: 50px 200px 50px 0px;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
@@ -145,14 +155,14 @@ textarea {
 
 @media (min-width: 1024px){
 	.nav.navbar-nav.navbar-right{
-		margin: 40px 0px 0px 0px;
+		margin: 40px 100px 0px 0px;
 	}
 	#logo{
 		margin-bottom: 20px;
 	}
 }
 
-@media (max-width: 1024px) and (min-width:768px){
+@media (max-width: 1024px) and (min-width:900px){
 	.nav.navbar-nav.navbar-right{
 		margin: 40px 0px 0px 0px;
 	}
@@ -173,6 +183,12 @@ textarea {
 
 .alto{
 	height: 435px;
+}
+
+@media (max-width:992px) and (min-width:768px) {
+	.alto {
+		height: 600px;
+	}
 }
 
 .section-line {
@@ -297,42 +313,17 @@ ul {
 	width: 250px;
 }
 
-/*a.image-zoom {
-	filter: alpha(opacity=90);
-	opacity: 0.90;
-}
-
-a.image-zoom:hover {
-	filter: alpha(opacity=70);
-	opacity: 0.70;
-
-}
-
-a.image-zoom:hover span.zoom-icon {
-	background: #ff9999 url(../files/zoom0000.png) no-repeat;
-	background-color: rgba(255, 74, 74, 0.6);
-}
-
-a.image-zoom:hover span.zoom-icon {
-	display: block;
-	position: absolute;
-	top: 30%;
-	left: 20%;
-}
-
-a.image-zoom span.zoom-icon {
-	display: none;
-	width: 50px;
-	height: 50px;
-	margin-left: 80px;
-}*/
-
  .homeSearch{
 	background-color: #f6f6f6;
 	border: 1px solid #e8e8e8;
 	padding: 20px 30px;
 	margin-top: 20px;
+}
 
+@media (max-width:1200px) and (min-width:992px) {
+	.homeSearch{
+		padding: 5px 5px;
+	}
 }
 
 .form-input{
@@ -354,6 +345,7 @@ label{
 	cursor: pointer;
 	text-transform: uppercase;
 }
+
 .mas{
 	font-size: 10px;
 	font-weight:bold;

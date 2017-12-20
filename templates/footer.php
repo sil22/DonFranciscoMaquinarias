@@ -8,7 +8,7 @@
 			<h4 class="upper line">Encontranos en</h4>
 			<a href="ubicacion.php">
 				<figure>
-					<iframe width="300" height="200" class="iframe-footer" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=-38.532221,-58.769871&amp;num=1&amp;ie=UTF8&amp;t=h&amp;ll=-38.532187,-58.770504&amp;spn=0.030214,0.051413&amp;z=14&amp;output=embed"></iframe>
+					<iframe width="300" height="150" class="iframe-footer" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=-38.532221,-58.769871&amp;num=1&amp;ie=UTF8&amp;t=h&amp;ll=-38.532187,-58.770504&amp;spn=0.030214,0.051413&amp;z=14&amp;output=embed"></iframe>
 				</figure>
 			</a>
 		</div>
@@ -66,7 +66,7 @@
 
 			<!-- #footer-bottom-->
 				<div class="row footer-bottom">
-					<div class="col-md-offset-2 col-md-4 col-xs-12">
+					<div class="col-md-offset-2 col-md-6 col-sm-8 col-xs-8">
 							<ul>
 								<li><a href="index.php">Inicio</a></li>
 								<li><a href="nosotros.php">Nosotros</a></li>
@@ -75,7 +75,7 @@
 								<li><a href="contacto.php">Contacto</a></li>
 							</ul>
 					</div>
-						<div class="col-md-4 col-xs-12">copyright © 2013 <a href="http://www.realview-la.com/" target="_blank">Realview</a>
+						<div class="col-md-4 col-sm-4 col-xs-4">copyright © 2013 <a href="http://bpsistemas.com/" class="space" target="_blank">BPsistemas</a>
 						</div>
 					</div>
 

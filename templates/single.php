@@ -59,9 +59,6 @@ echo '<div style=" padding:5px; background-color:#FFC; margin:5px; height:20px; 
       <div class="col-md-8">
         <!-- .entry-content -->
         <h4 class="section-line">
-        <span style="float:right">
-          <a href="http://www.facebook.com/share.php?u=<?=$_SERVER['SCRIPT_URI'].'?maquinaria='.$id ?>&t=<?=$model?> <?=$marc?>" target="_blank"><img src="files/facebook-3-m.png" class="img-responsive"></a>
-        </span>
         Descripción</h4>
         <p class="parrafo">
           <?=nl2br($note)?>

@@ -1,7 +1,7 @@
 <!--#sidebar_interior--->
 
 
-<div id="homeSearch" class="homeSearch">
+<div id="homeSearch" class="homeSearch col-md-12 col-sm-4">
 	<h4 class="section-line section-tittle">Buscar Maquinaria</h4>
 
 		<form id="searchAutosBox48724494362" action="" method="get">
@@ -160,7 +160,7 @@
 						<option value="Giaroli">Giaroli</option>
 						<option value="Gimetal">Gimetal</option>
 						<option value="Impagro">Impagro</option>
-						<option value="J&M">J&M</option>
+						<!-- <option value="JM">J&M</option> -->
 						<option value="Jaime Hector">Jaime Hector</option>
 						<option value="lecar">Lecar</option>
 						<option value="Leval">Leval</option>
@@ -248,7 +248,7 @@
 		</form>
 </div>
 
-<div class="homeSearch alto">
+<div class="col-md-12 col-sm-4 homeSearch alto">
 	<h4 class="section-line section-tittle">Últimas Maquinarias</h4>
 	<ul>
 
@@ -279,9 +279,8 @@ while($row=mysql_fetch_array($resultados)){
 					<figcaption>
 						<h5>
 							<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>">
-								<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>
+								<?=ucwords($row['model'])?>
 							</a>
-								<span class="ad-price"> - $ <?=$row['price']?></span>
 							</h5>
 					</figcaption>
 				</div>
@@ -295,7 +294,7 @@ while($row=mysql_fetch_array($resultados)){
 	</ul>
 	</div>
 
-<div class="col-md-12 col-xs-12 browser-cat homeSearch">
+<div class="col-md-12 col-xs-12  col-sm-4 browser-cat homeSearch">
 
 	<h4 class="section-line section-tittle">Buscar por marcas</h4>
 

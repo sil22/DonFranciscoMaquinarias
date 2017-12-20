@@ -91,9 +91,7 @@ $resultados =  $db->consulta($sql);
 					<div class="col-md-10 col-md-offset-1 col-xs-12 col-sm-12 maq-info-2">
 						<div class="panel panel-default">
 							<div class="col-md-6 col-xs-6 card">
-								<!-- <a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>"  target="_blank"> -->
 								<img src="<?=$row['min_url']?>" class=" img-responsive imgFeatured img-thumbnail" alt="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" title="<?=ucwords($row['model'])?> <?=ucwords($row['marc'])?>" />
-								<!-- </a> -->
 							</div>
 							<div class="panel-body item-panel">
 								<div class="col-md-6 col-xs-6">
@@ -111,12 +109,7 @@ $resultados =  $db->consulta($sql);
 											</li>
 										</ul>
 									</div>
-									<!-- <div class="col-md-4 col-xs-12">
-										<span>Precio $ <?=ucwords($row['price'])?></span>
-										<button type="button" class="btn btn-default detalles" name="button">
-											<a href="item.php?maquinaria=<?=$row['id_vehiculo']?>" target="_blank">MAS INFORMACION</a>
-										</button>
-									</div> -->
+									
 								</div>
 							</div>
 						</div>
